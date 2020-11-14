@@ -35,7 +35,7 @@
         <!--订单信息-->
         <div class="panel panel-default">
             <div class="panel-heading">房屋信息</div>
-            <form id="editForm" action="${ctx}/admin/room/add" method="post">
+            <form id="editForm" action="${ctx}/admin/room/add" method="post" enctype="multipart/form-data">
                 <div class="row data-type" style="margin: 0px">
                     <div class="col-md-2 title">房屋发布标题</div>
                     <div class="col-md-4 data">
@@ -49,22 +49,18 @@
 
                     <div class="col-md-2 title">房型</div>
                     <div class="col-md-4 data">
-                        <div class="form-group form-inline">
-                            <div class="select">
-                                <select name="room_type">
-                                    <option value="一室">一室</option>
-                                    <option value="两室">两室</option>
-                                    <option value="三室">三室</option>
-                                    <option value="四室">四室</option>
-                                    <option value="四室以上">四室以上</option>
-                                </select>
-                            </div>
-                        </div>
+                        <input type="text" class="form-control" placeholder="房型" name="roomType" required>
                     </div>
 
                     <div class="col-md-2 title">房源区域</div>
                     <div class="col-md-4 data">
-                        <input type="text" class="form-control" placeholder="房源区域" name="region_id" required>
+                        <select class="form-control" name="regionId" id="regionSlect">
+                            <%--<option value="1">江岸区</option>--%>
+                            <%--<option>2</option>--%>
+                            <%--<option>3</option>--%>
+                            <%--<option>4</option>--%>
+                            <%--<option>5</option>--%>
+                        </select>
                     </div>
 
                     <div class="col-md-2 title">房源地址</div>
@@ -73,7 +69,7 @@
                     </div>
                     <div class="col-md-2 title">房源详细地址</div>
                     <div class="col-md-4 data">
-                        <input type="text" class="form-control" placeholder="房源详细地址" name="detail_address" required>
+                        <input type="text" class="form-control" placeholder="房源详细地址" name="detailAddress" required>
                     </div>
                     <div class="col-md-2 title">房源面积</div>
                     <div class="col-md-4 data">
@@ -83,29 +79,29 @@
                     <div class="col-md-2 title">出租方式</div>
                     <div class="col-md-4 data">
                         <div class="form-group form-inline">
-                            <div class="radio"><label><input type="radio" name="rent_type" value="合租" checked>合租</label></div>
-                            <div class="radio"><label><input type="radio" name="rent_type" value="整租">整租</label></div>
+                            <div class="radio"><label><input type="radio" name="rentType" value="合租" checked>合租</label></div>
+                            <div class="radio"><label><input type="radio" name="rentType" value="整租">整租</label></div>
                         </div>
                     </div>
 
                     <div class="col-md-2 title">交通情况</div>
                     <div class="col-md-4 data">
-                        <input type="text" class="form-control" placeholder="交通情况" name="traffic_condition" required>
+                        <input type="text" class="form-control" placeholder="交通情况" name="trafficCondition" required>
                     </div>
                     <div class="col-md-2 title">设备情况</div>
                     <div class="col-md-4 data">
-                        <input type="text" class="form-control" placeholder="设备情况" name="facilities_condition" required>
+                        <input type="text" class="form-control" placeholder="设备情况" name="facilitiesCondition" required>
                     </div>
 
                     <div class="col-md-2 title">房屋描述</div>
                     <div class="col-md-4 data">
-                        <input type="text" class="form-control" placeholder="房屋描述" name="room_desc" required>
+                        <input type="text" class="form-control" placeholder="房屋描述" name="roomDesc" required>
                     </div>
 
                     <div class="col-md-2 title">上传图片</div>
                     <div class="col-md-4 data">
                         <div class="form-group form-inline">
-                            <input type="file" class="form-control" name="room_img" multiple>
+                            <input type="file" class="form-control" name="roomImgs" multiple>
                         </div>
                     </div>
 
@@ -131,6 +127,17 @@
 <script src="../../plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
 <link rel="stylesheet" href="../../css/style.css">
 <script>
+    // 异步请求获取房源所有区域信息
+    $.get("${pageContext.request.contextPath}/admin/region/findAll",function(data){
+        // alert("Data Loaded: " + data);
+        let str="";
+        $.each(data, function(i, n){
+            // alert( "Name: " + i + ", Value: " + n );
+            str+='<option value="'+n.id+'">'+n.regionName+'</option>';
+        });
+        $("#regionSlect").append(str);
+    });
+
     $('#datepicker').datepicker({
         autoclose: true,
         format: 'yyyy-mm-dd'

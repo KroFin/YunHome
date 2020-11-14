@@ -17,7 +17,7 @@
         var id = getCheckId();
         if(id) {
             if(confirm("你确认要删除此条记录吗？")) {
-                location.href="/system/user/delete.do?id="+id;
+                location.href="/system/user/delete?id="+id;
             }
         }else{
             alert("请勾选待处理的记录，且每次只能勾选一个")
@@ -103,7 +103,13 @@
                                     </td>
                                     <td>${item.rentUser.username}</td>
                                     <th class="text-center">
-                                        <button type="button" class="btn bg- olive btn-xs" onclick='location.href="/system/user/toUpdate.do? id=${item.id}"'>编辑</button>
+                                        <button type="button" class="btn bg- olive btn-xs" onclick='location.href="/admin/room/toUpdatePage?id=${item.id}"'>编辑</button>
+                                        <c:if test="${item.rentStatus ==-1}">
+                                            <button type="button" class="btn btn-primary" onclick='location.href="${pageContext.request.contextPath}/admin/room/up?id=${item.id}"'>上架</button>
+                                        </c:if>
+                                        <c:if test="${item.rentStatus ==0}">
+                                            <button type="button" class="btn btn-warning" onclick='location.href="${pageContext.request.contextPath}/admin/room/down?id=${item.id}"'>下架</button>
+                                        </c:if>
                                 </th>
                                 </tr>
                             </c:forEach>

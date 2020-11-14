@@ -7,6 +7,53 @@
             select="com.hopu.mapper.UserMapper.findById"
         />
     </resultMap>
+    <insert id="save" parameterType="room" keyProperty="id" useGeneratedKeys="true">
+        insert INTO t_room
+        (title, rent, room_type,user_id,region_id,address,detail_address,area,rent_type,traffic_condition,facilities_condition,room_desc,rent_status)
+        VALUES (#{title},#{rent},#{roomType},#{userId},#{regionId},#{address},#{detailAddress},#{area},#{rentType},#{trafficCondition},#{facilitiesCondition},#{roomDesc},#{rentStatus})
+    </insert>
+    <update id="update" parameterType="room">
+        update t_room
+        <set>
+            <if test="title !=null and title !=''">
+                title =#{title},
+            </if>
+            <if test="rent !=null and rent !=''">
+                rent =#{rent},
+            </if>
+            <if test="roomType !=null and roomType !=''">
+                room_type =#{roomType},
+            </if>
+            <if test="regionId !=null and regionId !=''">
+                region_id =#{regionId},
+            </if>
+            <if test="address !=null and address !=''">
+                address =#{address},
+            </if>
+            <if test="detailAddress !=null and detailAddress !=''">
+                detail_address =#{detailAddress},
+            </if>
+            <if test="rentType !=null and rentType !=''">
+                rent_type =#{rentType},
+            </if>
+            <if test="area !=null and area !=''">
+                area =#{area},
+            </if>
+            <if test="trafficCondition !=null and trafficCondition !=''">
+                traffic_condition =#{trafficCondition},
+            </if>
+            <if test="facilitiesCondition !=null and facilitiesCondition !=''">
+                facilities_condition =#{facilitiesCondition},
+            </if>
+            <if test="roomDesc !=null and roomDesc !=''">
+                room_desc =#{roomDesc},
+            </if>
+            <if test="rentStatus !=null and rentStatus !=''">
+                rent_status =-1
+            </if>
+        </set>
+        where id=#{id}
+    </update>
 
     <select id="findAll" resultMap="roomWithUser">
         select * from t_room

@@ -14,9 +14,18 @@
 			    http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!--开启组件扫描-->
-    <context:component-scan base-package="com.hopu.service"/>
+    <context:component-scan base-package="com.hopu"/>
     <!-- 引入外面的properties常量配置文件 -->
     <context:property-placeholder location="classpath:db.properties" />
+
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:nginx.properties</value>
+                <value>classpath:db.properties</value>
+            </list>
+        </property>
+    </bean>
 
     <!-- 数据源配置-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
@@ -35,6 +44,11 @@
     <!-- 扫描mapper接口文件 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.hopu.mapper"/>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--每次文件上传大小限制，单位B-->
+        <property name="maxUploadSize" value="102400000"></property>
     </bean>
 
     <!-- 创建sqlSession工厂 -->
@@ -58,5 +72,6 @@
                 </bean>
             </array>
         </property>
+
     </bean>
 </beans>

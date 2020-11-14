@@ -1,7 +1,10 @@
 package com.hopu.mapper;
 
 import com.hopu.domain.Room;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -9,4 +12,17 @@ import java.util.List;
 @Repository
 public interface RoomMapper {
     List<Room> findAll();
+
+    void save(Room room);
+
+    @Select("SELECT * FROM t_room WHERE id =#{id}")
+    Room findById(Integer id);
+
+    void update(Room room);
+
+    @Delete("DELETE FROM t_room WHERE id =#{id}")
+    void deleteById(Integer id);
+
+    @Update("UPDATE t_room SET rent_status =#{rentStatus} WHERE id =#{id}")
+    void updateRoom(@Param("id") Integer id, @Param("rentStatus") int rentStatus);
 }

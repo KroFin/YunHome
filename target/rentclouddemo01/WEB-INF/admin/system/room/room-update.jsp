@@ -131,6 +131,17 @@
 <script src="../../plugins/datepicker/locales/bootstrap-datepicker.zh-CN.js"></script>
 <link rel="stylesheet" href="../../css/style.css">
 <script>
+
+    $.get("${pageContext.request.contextPath}/admin/region/findAll",function(data){
+        // alert("Data Loaded: " + data);
+        let str="";
+        $.each(data, function(i, n){
+            // alert( "Name: " + i + ", Value: " + n );
+            str+='<option value="'+n.id+'">'+n.regionName+'</option>';
+        });
+        $("#regionSlect").append(str);
+    });
+
     $('#datepicker').datepicker({
         autoclose: true,
         format: 'yyyy-mm-dd'
