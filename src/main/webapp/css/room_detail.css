@@ -1,0 +1,1697 @@
+#header-wrap.header-wrap {
+    margin-top: 20PX;
+}
+.header-wrap {
+    margin: 27PX auto 0;
+    width: 1190PX;
+    height: 90PX;
+}
+
+.house-title .title-right-info .on .icon {
+    background-position: 50%!important;
+    background-size: contain;
+    background-image: url(https:////img.58cdn.com.cn/fangrs/img/8a78b8d382990144be912da0cded664e.png);
+}
+.footer-wrap, .header-wrap, .main-wrap {
+    overflow: hidden;
+}
+.header-wrap .clearfix {
+    zoom: 1;
+}
+.header-wrap .fl {
+    float: left;
+}
+.header-wrap .logo {
+    width: 314PX;
+    height: 42PX;
+    margin: 0 0 6PX;
+    background: url(../img/hopu_logo.png) no-repeat;
+}
+.header-wrap .top-publish-news {
+    width: 100PX;
+    height: 46PX;
+    color: #ff552e;
+    background: #ffefe7;
+    line-height: 46PX;
+    text-align: center;
+    font-size: 16PX;
+}
+.main-wrap {
+    margin-top: 5PX;
+}
+.footer-wrap, .header-wrap, .main-wrap {
+    width: 1190PX;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.house-title {
+    z-index: 5;
+    position: relative;
+    padding-top: 4PX;
+}
+.house-title h1 {
+    font-weight: 400;
+    width: 940PX;
+    line-height: 24PX;
+}
+ .strongbox {
+     font-family: 'fangchan-secret','Hiragino Sans GB','Microsoft yahei',Arial,sans-serif,'宋体'!important;
+ }
+.strongbox {
+    font-family: fangchan-secret,Hiragino Sans GB,Microsoft yahei,Arial,sans-serif,宋体!important;
+}
+.c_333 {
+    color: #333;
+}
+.f20 {
+    font-size: 20PX;
+}
+.house-title .house-update-info {
+    margin-top: 10PX;
+    margin-bottom: 19PX;
+    line-height: 18PX;
+}
+.c_888 {
+    color: #888;
+}
+.f12 {
+    font-size: 12PX;
+}
+.house-title .title-right-info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    padding-top: 7PX;
+}
+.house-title .title-right-info a {
+    float: left;
+    padding-top: 26PX;
+    display: block;
+}
+
+.c_888 {
+    color: #888;
+}
+.pr {
+    position: relative;
+}
+.house-title .title-right-info a i {
+    width: 24PX;
+    height: 16PX;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: -965PX 0;
+}
+
+ em, i {
+     font-style: normal;
+ }
+a, body, dd, div, dl, dt, h1, h2, h3, h4, html, li, p, span, ul {
+    font-family: -apple-system,BlinkMacSystemFont,PingFang SC,Helvetica Neue,STHeiti,Microsoft Yahei,Tahoma,Simsun,sans-serif!important;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.house-title .title-right-info .richscan-house {
+    z-index: 12;
+    margin-right: 16PX;
+    margin-left: 31PX;
+}
+.house-title .title-right-info a {
+    float: left;
+    padding-top: 26PX;
+    display: block;
+}
+.house-title .title-right-info .richscan-house i {
+    top: 0;
+    width: 27PX;
+    height: 15PX;
+    background-position: -895PX 0;
+}
+.house-title .title-right-info a i {
+    width: 24PX;
+    height: 16PX;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: -965PX 0;
+}
+
+ em, i {
+     font-style: normal;
+ }
+.house-title .title-right-info a {
+    float: left;
+    padding-top: 26PX;
+    display: block;
+}
+.c_888 {
+    color: #888;
+}
+.pr {
+    position: relative;
+}
+.house-title .title-right-info #gaq_phone i.icon {
+    margin-left: 0;
+}
+.house-title .title-right-info .see-by-phone .icon {
+    background-size: auto 80PX;
+}
+.house-title .title-right-info .see-by-phone i {
+    top: 0;
+    width: 10PX;
+    left: 23PX;
+    height: 15PX;
+    background-position: -414PX 0;
+}
+.house-title .title-right-info a i {
+    width: 24PX;
+    height: 16PX;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: -965PX 0;
+}
+
+.house-title .title-right-info #report {
+    margin-left: 20PX;
+    width: 30PX;
+    height: 48PX;
+    padding-top: 29PX;
+    margin-top: -3PX;
+}
+.house-title .title-right-info a {
+    float: left;
+    padding-top: 26PX;
+    display: block;
+}
+.house-title .title-right-info #report i {
+    background: url(https://pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb7….png) no-repeat 50%;
+    width: 24PX;
+    height: 28PX;
+    background-position: -551PX 6PX;
+    top: -5PX;
+}
+.house-title .title-right-info a i {
+    width: 24PX;
+    height: 16PX;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-position: -965PX 0;
+}
+
+.house-title .richscan-wrap {
+    display: none;
+    z-index: 11;
+    width: 120PX;
+    position: absolute;
+    top: 60PX;
+    right: 69PX;
+    padding: 20PX 10PX;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+.house-title .richscan-wrap .code {
+    width: 100PX;
+    height: 100PX;
+    margin: 0 auto 10PX;
+}
+.house-title .richscan-wrap .word {
+    font-size: 12PX;
+    color: #9b9b9b;
+    text-align: center;
+}
+.house-title .richscan-wrap .jianjiao {
+    width: 22PX;
+    height: 17PX;
+    top: -7PX;
+    right: 57PX;
+    background-position: -1680PX 0;
+}
+
+.house-title .manage-wrap {
+    display: none;
+    z-index: 11;
+    position: absolute;
+    top: 57PX;
+    right: 225PX;
+    width: 110PX;
+    height: 112PX;
+    padding: 9PX 0 18PX;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+.house-title .manage-wrap .jianjiao {
+    width: 22PX;
+    height: 17PX;
+    top: -7PX;
+    right: 42PX;
+    background-position: -1680PX 0;
+    position: absolute;
+    display: inline-block;
+}
+
+.house-title .manage-wrap a {
+    display: block;
+    text-align: center;
+    font-size: 12PX;
+    color: #888;
+    line-height: 28PX;
+}
+.house-basic-info {
+    margin-bottom: 40PX;
+}
+.house-basic-pic {
+    position: relative;
+    width: 464PX;
+}
+.fl {
+    float: left;
+}
+.house-basic-pic .basic-top-bigpic {
+    cursor: pointer;
+    width: 464PX;
+    height: 348PX;
+    overflow: hidden;
+    margin-bottom: 10PX;
+}
+.pr {
+    position: relative;
+}
+.house-basic-pic .basic-top-bigpic img {
+    width: 100%;
+    height: 100%;
+}
+ img {
+     border: 0;
+ }
+.house-basic-pic .basic-top-bigpic .leftNum {
+    width: 49PX;
+    height: 26PX;
+    line-height: 26PX;
+    color: #fff;
+    background: #000;
+    filter: alpha(opacity=50);
+    -moz-opacity: .5;
+    opacity: .5;
+    text-align: center;
+    right: 20PX;
+    bottom: 20PX;
+}
+.house-basic-pic .basic-top-bigpic .basic-pic-load {
+     display: none;
+     width: 90PX;
+     height: 75PX;
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     margin-left: -45PX;
+ }
+.house-basic-pic .basic-top-bigpic .basic-pic-load .top {
+    width: 90PX;
+    height: 45PX;
+    top: 0;
+    left: 0;
+    background-position: -2244PX 0;
+    -webkit-animation: rotateOut 1s linear infinite;
+    animation: rotateOut 1s linear infinite;
+}
+
+.house-basic-pic .basic-top-bigpic .basic-pic-load .bottom {
+    width: 60PX;
+    height: 30PX;
+    bottom: 0;
+    left: 15PX;
+    background-position: -2173PX 0;
+    -webkit-animation: rotateIn 1s linear infinite;
+    animation: rotateIn 1s linear infinite;
+}
+
+.house-basic-pic .basic-pic-list {
+    width: 100%;
+    height: 75PX;
+    overflow: hidden;
+}
+.pr {
+    position: relative;
+}
+
+.house-basic-pic .basic-pic-list .pic-list-wrap {
+    padding-left: 35PX;
+    width: 10000PX;
+}
+.pa {
+    position: absolute;
+}
+li, ul {
+    list-style: none;
+}
+.house-basic-pic .basic-pic-list .basic-pic-left {
+    left: 0;
+    background-position: -1358PX 31PX;
+}
+.house-basic-pic .basic-pic-list .basic-pic-left, .house-basic-pic .basic-pic-list .basic-pic-right {
+    top: 0;
+    width: 25PX;
+    height: 75PX;
+    display: block;
+    background-color: #000;
+    filter: alpha(opacity=75);
+    -moz-opacity: .75;
+    opacity: .75;
+}
+.icon {
+    display: inline-block;
+    position: absolute;
+    width: 16PX;
+    height: 30PX;
+    background: url(https://pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat 50%;
+    background-size: auto 80PX;
+}
+.pa {
+    position: absolute;
+}
+.house-basic-pic .basic-pic-list .basic-pic-right {
+    right: 0;
+    background-position: -1320PX 31PX;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li {
+    cursor: pointer;
+    position: relative;
+    width: 91PX;
+    height: 75PX;
+    margin-right: 10PX;
+    float: left;
+    background: #000;
+}
+.house-basic-pic .basic-pic-list .pic-list-wrap li img {
+    background: #fff;
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    opacity: .6;
+}
+ img {
+     border: 0;
+ }
+img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.house-basic-info .house-basic-right {
+    width: 686PX;
+    border-top: 1px solid #f3f3f3;
+}
+.fr {
+    float: right;
+}
+.house-basic-info .house-basic-right .house-basic-desc {
+    height: 347PX;
+    margin-bottom: 10PX;
+    position: relative;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item {
+    width: 424PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way {
+    height: 91PX;
+    line-height: 107PX;
+}
+.f16 {
+    font-size: 16PX;
+}
+.c_ff552e {
+    color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way b {
+    font-weight: 400;
+}
+.house-basic-info .house-basic-right .strongbox {
+    font-family: fangchan-secret,Hiragino Sans GB,Microsoft yahei,Arial,sans-serif,宋体!important;
+}
+
+ .strongbox {
+     font-family: 'fangchan-secret','Hiragino Sans GB','Microsoft yahei',Arial,sans-serif,'宋体'!important;
+ }
+.strongbox {
+    font-family: fangchan-secret,Hiragino Sans GB,Microsoft yahei,Arial,sans-serif,宋体!important;
+}
+.f36 {
+    font-size: 36PX;
+    color: #ff552e;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .instructions {
+    color: #888;
+    font-size: 14PX;
+    margin-right: 4PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item .house-pay-way .freeEntry {
+    position: relative;
+}
+.c_0091d7 {
+    color: #0091d7;
+}
+.f14 {
+    font-size: 14PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li {
+    line-height: 40PX;
+}
+
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li span {
+    display: inline-block;
+}
+.mr_15 {
+    margin-right: 15PX;
+}
+.c_888 {
+    color: #888;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-desc-item li span {
+    display: inline-block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info {
+    background: #fcfcfc;
+    border-radius: 2PX;
+    border: 1px solid #f2f0ed;
+    margin-top: 16PX;
+    padding: 15PX;
+    max-width: 240PX;
+    height: 417PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info {
+    z-index: 1;
+    width: 242PX;
+    text-align: center;
+    margin-top: -12PX;
+    position: relative;
+}
+.fr {
+    float: right;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-info-block {
+    padding: 16PX 0;
+    border-bottom: 1px solid #f2f0ed;
+    font-size: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait {
+    margin-top: 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait {
+    width: 80PX;
+    height: 80PX;
+    margin: 25PX auto 10PX;
+    z-index: 3;
+}
+.pr {
+    position: relative;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait a, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait a {
+    width: 80PX;
+    height: 80PX;
+    display: block;
+    overflow: hidden;
+    border-radius: 40PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-head-portrait a img, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-head-portrait a img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+a img {
+    border: 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name {
+    margin-bottom: 8PX;
+}
+.f16 {
+    font-size: 16PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-name a.c_000 {
+    font-weight: 500;
+}
+.c_000 {
+    color: #000;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company {
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-company, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company {
+    height: 20PX;
+    line-height: 20PX;
+    color: #333;
+    width: 110%;
+    margin-left: -5%;
+    font-size: 12PX;
+    text-align: center;
+    font-weight: 400;
+    margin-top: -3PX;
+    margin-bottom: 1PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-info-block {
+    padding: 16PX 0;
+    border-bottom: 1px solid #f2f0ed;
+    font-size: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score {
+    width: 100%;
+    height: 36PX;
+    display: flex;
+    margin-bottom: 0;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-score, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score {
+    width: 100%;
+    height: 36PX;
+    display: flex;
+    margin-bottom: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item {
+    border: none;
+    flex: 1;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item .score-result {
+    display: block;
+    color: #333;
+    font-size: 14PX;
+    line-height: 14PX;
+    padding-bottom: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-score .score-item .score-title {
+    display: block;
+    color: #999;
+    font-size: 12PX;
+    line-height: 12PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-info-block:last-of-type {
+    border-bottom: none;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+    width: 120%;
+    margin-left: -10%;
+    color: #999;
+    font-size: 12PX;
+    text-align: center;
+    margin-bottom: 9PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+    width: 120%;
+    margin-left: -10%;
+    color: #999;
+    font-size: 12PX;
+    text-align: center;
+    margin-bottom: 9PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num {
+    background: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2346b4d….png);
+    padding-left: 22PX;
+    background-size: 18PX 14PX;
+    background-position: 1PX 1PX;
+    background-repeat: no-repeat;
+    height: 20PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num {
+    font-size: 12PX;
+    cursor: pointer;
+    margin-right: 5PX;
+    position: relative;
+    background: none\9;
+    line-height: 16PX;
+    display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name {
+    text-decoration: underline;
+    vertical-align: inherit;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store {
+    margin-bottom: 8PX;
+    background: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v287d710….png);
+    padding-left: 25PX;
+    background-size: 20PX 15PX;
+    background-position: 1PX 0;
+    background-repeat: no-repeat;
+    height: 20PX;
+    background: none\9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license {
+    font-size: 12PX;
+    cursor: pointer;
+    margin-left: 10PX;
+    background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5c….png);
+    padding-left: 22PX;
+    background-size: 18PX 14PX;
+    background-position: 1PX 1PX;
+    background-repeat: no-repeat;
+    height: 20PX;
+    position: relative;
+    background: none\9;
+    line-height: 16PX;
+    display: inline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store a, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store a {
+    color: #999;
+    height: 20PX;
+    line-height: 18PX;
+    text-decoration: underline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name {
+    text-decoration: underline;
+    vertical-align: inherit;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .value, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .value {
+    color: #999;
+    vertical-align: middle;
+    height: 20PX;
+    line-height: 18PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper {
+    left: -94PX!important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper {
+    display: none;
+    position: absolute;
+    top: 14PX;
+    z-index: 9999;
+    padding-top: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop {
+    display: inline-block;
+    padding: 17PX 10PX;
+    border-radius: 10PX;
+    width: 220PX;
+    height: 283PX;
+    background: #fff;
+    box-shadow: 0 0 5PX 0 rgba(0,0,0,.25);
+    border: 1px solid #f2f4f6;
+}
+.house-basic-info .clear {
+    clear: both;
+}
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.house-detail-desc {
+    width: 100%;
+    border-top: 1px solid #f3f3f3;
+    overflow: hidden;
+}
+.house-detail-desc .main-detail-info {
+    width: 706PX;
+    overflow: hidden;
+    float: left;
+}
+.side-right-info {
+    margin-top: 39PX;
+    width: 426PX;
+    overflow: hidden;
+}
+.fr {
+    float: right;
+}
+.agent-other-house {
+    margin-bottom: 57PX;
+}
+.agent-other-house .agent-house-nav {
+    font-size: 18PX;
+    line-height: 18PX;
+    margin-bottom: 19PX;
+}
+.house-detail-desc .c_333 {
+    color: #333;
+}
+.agent-other-house li {
+    height: 120PX;
+    margin-bottom: 30PX;
+}
+.agent-other-house li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.agent-other-house li a .pic {
+    width: 168PX;
+    height: 120PX;
+    overflow: hidden;
+}
+.fl {
+    float: left;
+}
+.agent-other-house li a .side-right {
+    margin-left: 17PX;
+    width: 240PX;
+}
+.fl {
+    float: left;
+}
+.agent-other-house li a .pic img {
+    background: #fff;
+    opacity: 1;
+}
+.agent-other-house li a .side-right .info-title {
+    line-height: 17PX;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.house-detail-desc .c_555 {
+    color: #555;
+}
+.house-detail-desc .f18 {
+    font-size: 18PX;
+}
+.agent-other-house li a .side-right .info-area-toward {
+    height: 40PX;
+    line-height: 20PX;
+    overflow: hidden;
+    margin-top: 10PX;
+    margin-bottom: 13PX;
+}
+.house-detail-desc .c_888 {
+    color: #888;
+}
+.c_ff552e {
+    color: #ff552e;
+}
+.f12 {
+    font-size: 12PX;
+}
+.house-detail-desc .f18 {
+    font-size: 18PX;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar {
+    width: 100%;
+    height: 24PX;
+    margin-top: 39PX;
+    margin-bottom: 34PX;
+    overflow: hidden;
+    font-size: 18PX;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li.on, .house-detail-desc .main-detail-info .nav-detail-bar li.on a, .house-detail-desc .main-detail-info .nav-detail-bar li a:hover {
+    color: #333;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li {
+    float: left;
+    margin-right: 57PX;
+    color: #888;
+    cursor: pointer;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li.on, .house-detail-desc .main-detail-info .nav-detail-bar li.on a, .house-detail-desc .main-detail-info .nav-detail-bar li a:hover {
+    color: #333;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li {
+    float: left;
+    margin-right: 57PX;
+    color: #888;
+    cursor: pointer;
+}
+.house-detail-desc .main-detail-info .nav-detail-bar li a {
+    color: #888;
+}
+.house-detail-desc .main-detail-info .report-text {
+    width: 100%;
+    margin-top: 3PX;
+    height: 44PX;
+    line-height: 44PX;
+    background: #fffaf8;
+    padding: 0 7PX;
+    font-size: 12PX;
+    color: #555;
+}
+.house-detail-desc .main-detail-info .report-text .color {
+    color: #ff552e;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate {
+    display: flex;
+    align-items: center;
+    margin: 30PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .title {
+    width: 95PX;
+    font-size: 16PX;
+    color: #333;
+    line-height: 30PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.house-detail-desc .main-detail-info .house-disposal {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 40PX;
+    margin-bottom: 27PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal li {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14PX;
+    color: #555;
+    width: 75PX;
+    line-height: 18PX;
+    margin: 0;
+    padding: 0;
+}
+.house-detail-desc .main-detail-info .house-disposal li {
+    font-size: 14PX;
+    color: #555;
+    float: left;
+    position: relative;
+    width: 117PX;
+    line-height: 18PX;
+    text-align: center;
+    padding-top: 39PX;
+    margin-bottom: 27PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .bed i {
+    background-position: -299PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .icon {
+    position: static;
+    background: url(https://pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat 50%;
+    background-size: auto 80PX;
+    width: 40PX;
+    height: 40PX;
+}
+.house-detail-desc .main-detail-info .house-disposal .bed i {
+    width: 35PX;
+    height: 29PX;
+    background-position: -301PX 0;
+    left: 42PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .air-condition i {
+    background-position: -573PX 0;
+}
+.house-detail-desc .main-detail-info .house-disposal .icon {
+    display: inline-block;
+    position: absolute;
+    width: 16PX;
+    height: 30PX;
+    background: url(https://pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat 50%;
+    background-size: auto 80PX;
+}
+.house-detail-desc .main-detail-info .house-disposal li i {
+    top: 0;
+}
+.house-basic-info .house-basic-right .house-fraud-tip {
+    height: 75PX;
+    position: relative;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container {
+    float: left;
+    position: relative;
+    width: 324PX;
+    height: 75PX;
+    line-height: 75PX;
+    background: rgba(255,85,46,.9);
+    font-size: 20PX;
+    color: #fff;
+    text-align: center;
+    margin-right: 10PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips {
+    display: none;
+    position: absolute;
+    left: 66PX;
+    top: -280PX;
+    width: 420PX;
+    height: 240PX;
+    border-radius: 2PX;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 2PX 10PX #eee;
+    padding: 12PX 8PX;
+    -webkit-animation-name: fade-up;
+    animation-name: fade-up;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    z-index: 999;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im {
+    float: left;
+    height: 73PX;
+    width: 88PX;
+    margin-right: 10PX;
+    font-size: 12PX;
+    background: #f9f9f9;
+    color: #21b2ee;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    text-align: center;
+    transition: all .1s ease;
+}
+.house-basic-info .house-basic-right .house-fraud-tip span {
+    display: block;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .wx-wrap {
+    width: 242PX;
+    height: 47PX;
+    float: right;
+    line-height: 60PX;
+    text-align: center;
+    color: #000;
+    margin-top: 27PX;
+    font-size: 12PX;
+    border-bottom: 1px solid #f4f6f6;
+    display: none;
+}
+#report-bar {
+    display: none;
+    position: absolute;
+    top: -370PX;
+    right: 0;
+    z-index: 9;
+    width: 110PX;
+    height: 84PX;
+    padding: 9PX 0 18PX;
+    background: #fff;
+    border: 1px solid #d2d2d2;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-icon {
+    display: block;
+    background-repeat: no-repeat;
+    width: 66PX;
+    height: 75PX;
+    background-color: #ff552e;
+    background-image: url(https://pic1.58cdn.com.cn/nowater/fangfe/n_v2c3c3ee98766c42549b2bb5b4cf3b553a.png);
+    background-position: 50%;
+    background-size: 37PX 37PX;
+    float: left;
+    background-image: none\9;
+    background-color: rgba(255,85,46,.9)\9;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .house-chat-icon-phone-white {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25PX;
+    height: 25PX;
+    background-position: -25PX -51PX;
+    display: none;
+}
+
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .house-chat-txt {
+    display: inline-block;
+    margin: 0 14PX;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .tooltips-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-bottom-width: 0;
+    border-top-width: 10PX;
+    border-bottom-style: dashed;
+    border-top-style: solid;
+    border-left: 12px dashed transparent;
+    border-right: 12px dashed transparent;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im {
+    float: left;
+    height: 73PX;
+    width: 88PX;
+    margin-right: 10PX;
+    font-size: 12PX;
+    background: #f9f9f9;
+    color: #21b2ee;
+    border: 1px solid #e6e6e6;
+    cursor: pointer;
+    text-align: center;
+    transition: all .1s ease;
+}
+.house-basic-info .house-basic-right .house-fraud-tip span {
+    display: block;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-im .im-icon {
+    display: block;
+    width: 32PX;
+    height: 32PX;
+    margin: 12PX auto 7PX;
+    background-repeat: no-repeat;
+    background-position: -50PX 0;
+    background-image: url(https://img.58cdn.com.cn/fangrs/img/8cd99ff4e7f538be32ba65dc09d98a35.png);
+}
+
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .tooltips-arrow-border {
+    color: #eee;
+    bottom: -10PX;
+    z-index: -10;
+    right: 75%;
+}
+.house-basic-info .house-basic-right .house-fraud-tip span {
+    display: block;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .tooltips-arrow-bg {
+    color: #fff;
+    bottom: -8PX;
+    right: 75%;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .for-center {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    display: none;
+}
+.house-basic-info .house-basic-right .house-fraud-tip .house-chat-cover-container .phone-qr-tooltips .phone-qr-code {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 32PX;
+    width: 170PX;
+    height: 170PX;
+    position: absolute;
+    left: 42PX;
+    top: 45PX;
+}
+
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .title {
+    width: 95PX;
+    font-size: 16PX;
+    color: #333;
+    line-height: 30PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce {
+    margin-bottom: 31PX;
+    font-size: 16PX;
+    color: #555;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li {
+    width: 100%;
+    margin-bottom: 20PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a1 {
+    width: 93PX;
+    float: left;
+    font-size: 16PX;
+    color: #333;
+    line-height: 30PX;
+}
+
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 {
+    width: 612PX;
+    float: left;
+    font-size: 14PX;
+    color: #555;
+    line-height: 30PX;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.house-detail-desc .main-detail-info .house-word-introduce .introduce-item li .a2 em {
+    margin-right: 30PX;
+    position: relative;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .chest i {
+    background-position: -1870PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config i {
+    background-position: -2676PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config i {
+    background-position: -2676PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .balcony i {
+    background-position: -2011PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config i {
+    background-position: -2676PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .smart-lock i {
+    background-position: -2637PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .icebox i {
+    background-position: -219PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .washer i {
+    background-position: -1252PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config i {
+    background-position: -2676PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .no-config i {
+    background-position: -2676PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .cooker i {
+    background-position: -2597PX -5PX;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .broadband i {
+    background-position: -612PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .water-heater i {
+    background-position: -854PX 0;
+}
+.house-detail-desc .main-detail-info .fang-detail .conf-cate .items .house-disposal .fuel-gas i {
+    background-position: -1973PX 0;
+}
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.jigou, .zhujianwei-code .record-wrap .pass .code-item .code-pic.jigou {
+    background-image: url(https://pic1.58cdn.com.cn/nowater/fangfe/n_v2ad1355debf5f4267aaf1612cff6d22ea.png);
+}
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic, .zhujianwei-code .record-wrap .pass .code-item .code-pic {
+    width: 72PX;
+    height: 18PX;
+    margin-right: 17PX;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label, .zhujianwei-code .record-wrap .pass .code-item .code-label {
+    font-size: 14PX;
+}
+.zhujianwei-code .record-wrap .no-pass .code-item .code-label, .zhujianwei-code .record-wrap .no-pass .code-item .code-pic, .zhujianwei-code .record-wrap .pass .code-item .code-label, .zhujianwei-code .record-wrap .pass .code-item .code-pic {
+    display: inline-block;
+    vertical-align: top;
+}
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic.house, .zhujianwei-code .record-wrap .pass .code-item .code-pic.house {
+    background-image: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2d38ecdb87acd4000bdd5fc4cf35b4872.png);
+}
+.zhujianwei-code .record-wrap .no-pass .code-item .code-pic, .zhujianwei-code .record-wrap .pass .code-item .code-pic {
+    width: 72PX;
+    height: 18PX;
+    margin-right: 17PX;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.zhujianwei-code {
+    background: #fff;
+    padding: 30PX 0;
+}
+.house-detail-desc .main-detail-info .house-pic-list {
+    width: 100%;
+    overflow: hidden;
+}
+.house-detail-desc .main-detail-info .house-pic-list li.even {
+    margin-right: 10PX;
+}
+.house-detail-desc .main-detail-info .house-pic-list .pic {
+    float: left;
+    cursor: pointer;
+    width: 348PX;
+    height: 261PX;
+    margin-bottom: 10PX;
+}
+.house-detail-desc .main-detail-info .house-pic-list .pic img {
+    background: #fff;
+    -moz-opacity: 1;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.house-detail-desc .main-detail-info .district-info-header {
+    margin-top: 60PX;
+    margin-bottom: 35PX;
+    height: 70PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .fl {
+    float: left;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-pic {
+    width: 70PX;
+    height: 70PX;
+    overflow: hidden;
+}
+.house-detail-desc .main-detail-info .district-info-header .fl {
+    float: left;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-decs {
+    margin-left: 15PX;
+    margin-top: -3PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .fr {
+    float: right;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale {
+    color: #888;
+    font-size: 14PX;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale a {
+    display: inline-block;
+    margin-right: 8PX;
+    width: 80PX;
+    height: 90PX;
+    color: #888;
+}
+.house-detail-desc .main-detail-info .district-info-header .district-online-sale a em {
+    display: block;
+    text-align: center;
+}
+.house-detail-desc .lh50 {
+    line-height: 50PX;
+}
+.house-detail-desc .f24 {
+    font-size: 24PX;
+}
+.house-detail-desc .c_333 {
+    color: #333;
+}
+.house-detail-desc .main-detail-info .district-info-list {
+    border-top: 1px solid #f8f8f8;
+    padding: 12PX 0 24PX;
+    line-height: 28PX;
+    font-size: 14PX;
+    color: #333;
+}
+.house-detail-desc .main-detail-info .district-info-list li span {
+    display: inline-block;
+    margin-right: 15PX;
+}
+.house-detail-desc .c_888 {
+    color: #888;
+}
+.house-detail-desc .main-detail-info .district-info-list li span {
+    display: inline-block;
+    margin-right: 15PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap {
+    width: 706PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #dtjt_title {
+    height: 28PX;
+    line-height: 28PX;
+    margin-bottom: 12PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map {
+    width: 706PX;
+    position: relative;
+    height: 320PX;
+    overflow: hidden;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .active {
+    display: inline-block;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .map {
+    display: none;
+}
+#soso_map {
+    width: 706PX;
+    height: 320PX;
+    position: relative;
+    overflow: hidden;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap {
+    width: 704PX;
+    height: 46PX;
+    margin-top: 10PX;
+    border: 1px solid #e0e0e0;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span.active, .house-detail-desc .main-detail-info #dtjt_wrap span:hover {
+    color: #333;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .active {
+    display: inline-block;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span {
+    display: inline-block;
+    font-size: 14PX;
+    color: #888;
+    cursor: pointer;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span {
+    display: inline-block;
+    font-size: 14PX;
+    color: #888;
+    cursor: pointer;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span {
+    display: inline-block;
+    font-size: 14PX;
+    color: #888;
+    cursor: pointer;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info {
+    height: 320PX;
+    position: relative;
+    width: 706PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info #map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab {
+    right: 20PX;
+    position: absolute;
+    top: 20PX;
+    width: 90PX;
+    border: 1px solid #d2d2d2;
+    display: none;
+    font-size: 12PX;
+    background: #fff;
+    padding-bottom: 8PX;
+}
+
+.map_tab_sel {
+    display: block!important;
+}
+.BMap_mask {
+    background: transparent url(https://sapi.map.baidu.com/images/blank.gif);
+}
+.house-detail-desc .main-detail-info #dtjt_wrap span {
+    display: inline-block;
+    font-size: 14PX;
+    color: #888;
+    cursor: pointer;
+}
+.BMap_zoomer {
+    background-image: url(https://sapi.map.baidu.com/images/mapctrls1d3.gif);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-size: 1px;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpPan {
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    background: url(https://sapi.map.baidu.com/images/mapctrls2d0.png) no-repeat;
+}
+.BMap_stdMpPan .BMap_button {
+    height: 15px;
+    width: 15px;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_panN {
+    left: 14px;
+    top: 0;
+}
+.BMap_panN, .BMap_panW, .BMap_panE, .BMap_panS {
+    overflow: hidden;
+}
+.BMap_button {
+    cursor: pointer;
+}
+.BMap_panW {
+    left: 1px;
+    top: 12px;
+}
+.BMap_panE {
+    left: 27px;
+    top: 12px;
+}
+.BMap_panS {
+    left: 14px;
+    top: 25px;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpZoom {
+    top: 45px;
+    overflow: hidden;
+}
+.BMap_stdMpZoom .BMap_button {
+    width: 22px;
+    height: 21px;
+    left: 12px;
+    overflow: hidden;
+    background-image: url(https://sapi.map.baidu.com/images/mapctrls2d0.png);
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpZoomIn {
+    background-position: 0 -221px;
+}
+.BMap_button {
+    cursor: pointer;
+}
+
+.BMap_stdMpZoom .BMap_button {
+    width: 22px;
+    height: 21px;
+    left: 12px;
+    overflow: hidden;
+    background-image: url(https://sapi.map.baidu.com/images/mapctrls2d0.png);
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpZoomOut {
+    background-position: 0 -265px;
+}
+.BMap_button {
+    cursor: pointer;
+}
+
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+
+.BMap_stdMpSlider {
+    width: 37px;
+    top: 18px;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_zlHolder {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpSliderBgTop {
+    left: 18px;
+    width: 10px;
+    overflow: hidden;
+    background: url(https://sapi.map.baidu.com/images/mapctrls2d0.png) no-repeat -23px -226px;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpSliderBgBot {
+    left: 19px;
+    height: 8px;
+    width: 10px;
+    top: 124px;
+    overflow: hidden;
+    background: url(https://sapi.map.baidu.com/images/mapctrls2d0.png) no-repeat -33px bottom;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.BMap_stdMpSliderMask {
+    height: 100%;
+    width: 24px;
+    left: 10px;
+    cursor: pointer;
+}
+.BMap_stdMpCtrl div {
+    position: absolute;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab {
+    right: 20PX;
+    position: absolute;
+    top: 20PX;
+    width: 90PX;
+    border: 1px solid #d2d2d2;
+    display: none;
+    font-size: 12PX;
+    background: #fff;
+    padding-bottom: 8PX;
+}
+.map_tab, .map_tab dt.on {
+    background: #fff;
+}
+.map_tab_sel {
+    display: block!important;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab .zbpz-title {
+    line-height: 28PX;
+    padding: 7PX 0 0 10PX;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl {
+    cursor: pointer;
+    height: 28PX;
+}
+.map_tab_sel .zbpz-title {
+    display: block;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap #baidu_map #dtjt_info .map_tab dl.hide {
+    display: none;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap a {
+    position: relative;
+    width: 100%;
+    height: 46PX;
+    line-height: 46PX;
+    font-size: 14PX;
+    display: block;
+    color: #555;
+    background: #f5f5f5;
+    text-align: center;
+}
+.house-detail-desc .main-detail-info #dtjt_wrap .view-more-detailmap .icon {
+    margin-bottom: -4PX;
+    width: 10PX;
+    height: 13PX;
+    position: absolute;
+    top: 18PX;
+    background-position: -1963PX 2PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info {
+    z-index: 1;
+    width: 242PX;
+    text-align: center;
+    margin-top: -12PX;
+    position: relative;
+}
+
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-info-block {
+    padding: 16PX 0;
+    border-bottom: 1px solid #f2f0ed;
+    font-size: 12PX;
+}
+
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num {
+    background: url(https://pic3.58cdn.com.cn/nowater/fangfe/n_v2346b4d130e0d489f912f93dfa081b23a.png);
+    padding-left: 22PX;
+    background-size: 18PX 14PX;
+    background-position: 1PX 1PX;
+    background-repeat: no-repeat;
+    height: 20PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .employment-record-num, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num {
+    font-size: 12PX;
+    cursor: pointer;
+    margin-right: 5PX;
+    position: relative;
+    background: none\9;
+    line-height: 16PX;
+    display: block;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name {
+    text-decoration: underline;
+    vertical-align: inherit;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store {
+    margin-bottom: 8PX;
+    background: url(https://pic2.58cdn.com.cn/nowater/fangfe/n_v287d710da4e624314972a85032cc0d460.png);
+    padding-left: 25PX;
+    background-size: 20PX 15PX;
+    background-position: 1PX 0;
+    background-repeat: no-repeat;
+    height: 20PX;
+    background: none\9;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .agent-store a, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .agent-store a {
+    color: #999;
+    height: 20PX;
+    line-height: 18PX;
+    text-decoration: underline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license {
+    font-size: 12PX;
+    cursor: pointer;
+    margin-left: 10PX;
+    background: url(https://pic4.58cdn.com.cn/nowater/fangfe/n_v29e2c5cff6d3c4b9185b54cfc22d7e6a0.png);
+    padding-left: 22PX;
+    background-size: 18PX 14PX;
+    background-position: 1PX 1PX;
+    background-repeat: no-repeat;
+    height: 20PX;
+    position: relative;
+    background: none\9;
+    line-height: 16PX;
+    display: inline;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-card .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .employment-record-num .name {
+    text-decoration: underline;
+    vertical-align: inherit;
+}
+
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .value, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .name, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .value {
+    color: #999;
+    vertical-align: middle;
+    height: 20PX;
+    line-height: 18PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper {
+    left: -94PX!important;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper {
+    display: none;
+    position: absolute;
+    top: 14PX;
+    z-index: 9999;
+    padding-top: 10PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-company {
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.house-title .title-right-info #report i {
+    background: url(https://pic8.58cdn.com.cn/nowater/fangfe/n_v2432cb783174d485286f9388643d966ff.png) no-repeat 50%;
+    width: 24PX;
+    height: 28PX;
+    background-position: -551PX 6PX;
+    top: -5PX;
+}
+.house-basic-info .house-basic-right .house-basic-desc .house-agent-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop, .house-basic-info .house-basic-right .house-basic-desc .house-broker-info .agent-infor-wrap .business-license .agent-img-pop-wrapper .agent-img-pop {
+    display: inline-block;
+    padding: 17PX 10PX;
+    border-radius: 10PX;
+    width: 220PX;
+    height: 283PX;
+    background: #fff;
+    box-shadow: 0 0 5PX 0 rgba(0,0,0,.25);
+    border: 1px solid #f2f4f6;
+}
+

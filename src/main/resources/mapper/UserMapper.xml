@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace指定mapper接口文件名称空间 -->
+<mapper namespace="com.hopu.mapper.UserMapper">
+
+    <insert id="addUser" >
+        INSERT INTO t_user(username, password, nick_name,phone,role,email,gender,portrait,age,create_time,update_time)
+        VALUES (#{username},#{password},#{nickName},#{phone},#{role},#{email},#{gender},#{portrait},#{age},#{createTime},#{updateTime})
+    </insert>
+
+    <update id="updateUser" >
+        update t_user
+        <set>
+            <if test="username !=null and username !=''">
+                username =#{username},
+            </if>
+            <if test="email !=null and email !=''">
+                email =#{email},
+            </if>
+            <if test="phone !=null and phone !=''">
+                phone =#{phone},
+            </if>
+            <if test="age !=null and age !=''">
+                age =#{age},
+            </if>
+            <if test="gender !=null and gender !=''">
+                gender =#{gender},
+            </if>
+            <if test="updateTime !=null">
+                update_time =#{updateTime}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+    <select id="userSearch">
+        select * from t_user where
+        <set>
+            <if test="username !=null and username !=''">
+                username =#{username},
+            </if>
+            <if test="email !=null and email !=''">
+                email =#{email},
+            </if>
+            <if test="phone !=null and phone !=''">
+                phone =#{phone},
+            </if>
+            <if test="nick_name !=null and nick_name !=''">
+                nick_name =#{nick_name},
+            </if>
+        </set>
+        like '%${searchContent}%'
+    </select>
+</mapper>

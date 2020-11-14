@@ -1,0 +1,304 @@
+body {
+    background: url(../index/lib/layer/login_img/bg.jpg) no-repeat center top;
+    background-size: 100% 100%
+}
+#relevance_account, #pop_body, #multiChallPop {
+    display: none;
+    box-sizing: content-box;
+    position: fixed;
+    z-index: 99998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: rgba(0,0,0,0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+}
+.bg_mask {
+    background: rgba(0,0,0,0.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000, endColorstr=#4C000000);
+}
+
+#bg, .bg_mask {
+    position: fixed;
+    _position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#pop_body .overflow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#relevance_account .Top_links, #pop_body .Top_links {
+    position: absolute;
+    width: 476px;
+    top: 14px;
+    font-size: 12px;
+    left: 50%;
+    margin-left: -238px;
+}
+#relevance_account .Top_links .backHome, #pop_body .Top_links .backHome {
+    float: left;
+}
+#relevance_account .Top_links a, #pop_body .Top_links a {
+    text-decoration: none;
+    color: #fff;
+}
+#relevance_account .Top_links .goToLogin, #relevance_account .Top_links .register, #pop_body .Top_links .goToLogin, #pop_body .Top_links .register {
+    float: right;
+}
+#relevance_account .Top_links a, #pop_body .Top_links a {
+    text-decoration: none;
+    color: #fff;
+}
+#mask_body, #new_mask_body {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    margin-left: 50%;
+    left: -238px;
+    width: 476px;
+    padding-top: 62px;
+    box-shadow: 0 2px 6px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+}
+
+.logo5 {
+    height: 36px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 26px;
+    vertical-align: bottom;
+}
+
+.mask_body_item input {
+    width: 331px;
+    padding-left: 15px;
+    border: 2px solid #EBEBEB;
+    height: 36px;
+    line-height: unset;
+    line-height: 36px\9;
+    color: #000;
+    outline: none;
+    font-size: 14px;
+}
+.mask_body_item2 {
+    margin-left: 62px;
+    color: #000;
+}
+.mask_body_item2 input:hover{
+    cursor: pointer;
+}
+
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+#pop_body .disabled, #pop_body #mask_body .disabled {
+    color: #999999;
+}
+#pop_body .baseColorFt, #pop_body #mask_body .baseColorFt {
+    color: #ff552e;
+}
+#relevance_account #mask_body .disabled, #relevance_account #new_mask_body .disabled, #pop_body #mask_body .disabled, #pop_body #new_mask_body .disabled, #multiChallPop #mask_body .disabled, #multiChallPop #new_mask_body .disabled {
+    color: #999999;
+}
+#mask_body_item_getcode, #new_mask_body_item_getcode {
+    position: absolute;
+    padding: 0 6px;
+    height: 26px;
+    border-radius: 3px;
+    background: #EEEEEE;
+    color: #ff552e;
+    text-align: center;
+    font-size: 12px;
+    line-height: 26px;
+    top: 50%;
+    margin-top: -13px;
+    right: 8px;
+    cursor: pointer;
+}
+
+#relevance_account b, #pop_body b, #multiChallPop b {
+    float: right;
+    display: none;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 63px;
+}
+
+#mask_body_item_getvoicecode, #new_mask_body_item_getvoicecode {
+    font-style: normal;
+    color: #ff552e;
+    cursor: pointer;
+}
+
+.error_msg {
+    width: 350px;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0px auto;
+    color: #FF552E;
+    text-align: left;
+    display: none;
+}
+#pop_body .msgIcon, #pop_body #mask_body .msgIcon {
+    background-image: url(https://img.58cdn.com.cn/passportnew/img/flerroricon.png);
+}
+
+
+
+label {
+    cursor: default;
+}
+
+.mask_body_item img {
+    position: absolute;
+    right: 4px;
+    top: 17px;
+    width: 80px;
+    height: 34px;
+    cursor: pointer;
+}
+img {
+    border: 0;
+    vertical-align: bottom;
+}
+
+
+.error_msg span {
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url(//img.58cdn.com.cn/passportnew/img/flerroricon.png);
+}
+#mask_body .protocol {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #999;
+}
+#pop_body .baseColorFt, #pop_body #mask_body .baseColorFt {
+    color: #ff552e;
+}
+
+.login_item {
+    border: none;
+    background: #FF552E;
+    margin: 25px auto;
+    height: 42px;
+    padding: 0;
+}
+.mask_body_item {
+    width: 350px;
+    font-size: 14px;
+    margin: 0 auto;
+    position: relative;
+    padding: 13px 0;
+    clear: both;
+}
+#mask_body_item_login, #new_mask_body_item_login {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    /*line-height: 42px;*/
+    outline: none;
+    cursor: pointer;
+}
+#pop_body .disabled, #pop_body #mask_body .disabled {
+    color: #999999;
+}
+
+button {
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+
+.links_botton {
+    position: absolute;
+    width: 476px;
+    margin-left: -238px;
+    bottom: -46px;
+    font-size: 12px;
+    left: 50%;
+}
+.links_botton a {
+    color: rgb(246, 246, 246);
+    float: left;
+    width: 33%;
+    text-align: center;
+    font: 12px/1.2 "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, arial, Tahoma, SimSun, sans-serif;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+}
+#pop_body .baseColorBg, #pop_body #mask_body .baseColorBg {
+    background: #ff552e;
+}
+#mask_body *, #mask_body :after, #mask_body :before {
+    box-sizing: content-box;
+}
+
+
+.line-radio{
+    display: inline;
+}

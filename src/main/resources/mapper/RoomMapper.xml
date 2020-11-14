@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hopu.mapper.RoomMapper">
+    <resultMap id="roomWithUser" type="Room">
+        <association property="user" column="user_id"
+            select="com.hopu.mapper.UserMapper.findById"
+        />
+    </resultMap>
+
+    <select id="findAll" resultMap="roomWithUser">
+        select * from t_room
+    </select>
+</mapper>
