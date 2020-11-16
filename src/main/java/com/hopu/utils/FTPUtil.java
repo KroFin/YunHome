@@ -15,7 +15,7 @@ public class FTPUtil {
         String picHttpPath = null;
 
 
-        boolean flag = uploadFile(ftpConfig.getFTP_ADDRESS(), ftpConfig.getFTP_PORT(), ftpConfig.getFTP_USERNAME(),
+        boolean flag = uploadFile(ftpConfig.getFTP_ADDRESS(), 21, ftpConfig.getFTP_USERNAME(),
                 ftpConfig.getFTP_PASSWORD(), ftpConfig.getFTP_BASEPATH(), picSavePath, picNewName, inputStream);
 
         if(!flag){
@@ -28,25 +28,15 @@ public class FTPUtil {
         return picHttpPath;
     }
 
-
-
-
-    public static boolean uploadFile(String host, String ftpPort, String username, String password, String basePath,
+    public static boolean uploadFile(String host, int port, String username, String password, String basePath,
                                      String filePath, String filename, InputStream input) {
-        int port = Integer.parseInt(ftpPort);
         boolean result = false;
         FTPClient ftp = new FTPClient();
         try {
             int reply;
-            ftp.connect(host, port);// 连接FTP服务器
-            // 如果采用默认端口，可以使用ftp.connect(host)的方式直接连接FTP服务器
-            ftp.login(username, password);// 登录
-            reply = ftp.getReplyCode();
-            if (!FTPReply.isPositiveCompletion(reply)) {
-                ftp.disconnect();
-                return result;
-            }
-            //切换到上传目录
+            ftp.connect(host, port);
+            ftp.login(username, password);
+            ftp.setConnectTimeout(3600000);
             if (!ftp.changeWorkingDirectory(basePath+filePath)) {
                 //如果目录不存在创建目录
                 String[] dirs = filePath.split("/");
@@ -65,7 +55,6 @@ public class FTPUtil {
             }
             //设置上传文件的类型为二进制类型
             ftp.setFileType(FTP.BINARY_FILE_TYPE);
-            ftp.enterLocalPassiveMode();//这个设置允许被动连接--访问远程ftp时需要
             //上传文件
             if (!ftp.storeFile(filename, input)) {
                 return result;

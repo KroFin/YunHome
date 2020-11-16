@@ -88,6 +88,11 @@ public class RoomServiceImpl implements RoomService {
         roomMapper.updateRoom(id,rentStatus);
     }
 
+    @Override
+    public List<Room> findAll() {
+        return roomMapper.findAll();
+    }
+
     public FtpConfig getFtpConfig() {
         return ftpConfig;
     }

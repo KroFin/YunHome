@@ -1,7 +1,6 @@
 package com.hopu.domain;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,7 +8,7 @@ public class FtpConfig {
     /**
      * 获取ip地址
      */
-    @Value("http://123.57.252.81")
+    @Value("49.234.181.182")
     private String FTP_ADDRESS;
 
     /**
@@ -21,18 +20,18 @@ public class FtpConfig {
     /**
      * 用户名
      */
-    @Value("YunHome")
+    @Value("49.234.181.182")
     private String FTP_USERNAME;
 
     /**
      * 密码
      */
-    @Value("iot123456")
+    @Value("123456")
     private String FTP_PASSWORD;
 
     /**基本路径
      */
-    @Value("/www/wwwroot/YunHome")
+    @Value("/www/wwwroot/49.234.181.182")
     private String FTP_BASEPATH;
 
     public FtpConfig() {

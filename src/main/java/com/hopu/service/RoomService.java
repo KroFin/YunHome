@@ -4,6 +4,8 @@ import com.github.pagehelper.PageInfo;
 import com.hopu.domain.Room;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
+
 public interface RoomService {
     PageInfo<Room> findPage(Integer pageNum, Integer pageSize);
 
@@ -16,4 +18,6 @@ public interface RoomService {
     void delete(Integer id);
 
     void updateRoomRentStatus(Integer id, int rentStatus);
+
+    List<Room> findAll();
 }
