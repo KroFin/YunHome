@@ -53,8 +53,8 @@
         <div class="error_msg validcode" style="display: none;"><span class="msgIcon"></span><label class="msgColor">请输入正确的手机动态码</label>
         </div>
 
-        <div class="mask_body_item"><input class="pop_input" type="text" name="" id="mask_body_item_username"
-                                           placeholder="账号名" maxlength="20" required></div>
+        <div class="mask_body_item"><input class="pop_input" type="text" name="username" id="mask_body_item_username"
+                                           placeholder="账号名" maxlength="20" required onblur="checkUsername()"></div>
         <div class="error_msg username"><span class="msgIcon"></span><label class="msgColor">您还未输入账号名</label></div>
         <div class="slidecode">
             <div id="slidecodediv"></div>
@@ -100,6 +100,7 @@
 <script>
     // 用户名校验
     function checkUsername() {
+        $(".username").css("display","none");
         // 先清空之前的错误提示
         $("#usernameErrorMsg").html("");
         // 获取用户输入的用户名值
@@ -110,20 +111,23 @@
         if(!usernamereg.test(username)){
             // 表示用户名不匹配
             $("#usernameErrorMsg").html("用户名必须是4~15位的字母和数字组成！");
+            $(".username").css("display","block");
             return false;
         }
 
         // 2、再对用户名进行重名校验
         // 定义标记，对查询结果进行标记；同时声明同步请求，避免异步进入下一个方法
-        let flag=true;
+
         $.get({
-            url: "${pageContext.request.contextPath}/userServlet?method=findUserName&username="+username,
+            url: "${pageContext.request.contextPath}/user/checkUserName?username="+username,
             success:function(resp){
-                if(!resp.flag){
+                if(resp=="1"){
                     $("#usernameErrorMsg").html("该用户名太受欢迎了，请重新注册！");
+                    $(".username").css("display","block");
                     flag= false;
                 }else {
                     flag= true;
+                    $(".username").css("display","none");
                 }
             },
             async:false
@@ -133,6 +137,7 @@
 
     // 密码校验
     function checkPassword() {
+        $(".password").css("display","none");
         // 先清空之前的错误提示
         $("#passwordErrorMsg").html("");
         // 获取用户输入的用户名值
@@ -143,16 +148,18 @@
         if(!pwdreg.test(password)){
             // 提出提示
             $("#passwordErrorMsg").html("密码必须是5~10位的字母和数字组成！");
+            $(".password").css("display","block");
             // 返回，阻止继续向下执行
             return false;
         }else {
             return true;
+            $(".password").css("display","none");
         }
     }
 
     // 手机号码校验
     function checkPhone() {
-        // 先清空之前的错误提示
+        $(".phonenum").css("display","none");
         $("#phoneErrorMsg").html("");
         // 获取用户输入的用户名值
         let telephone = $("#telephone").val();
@@ -162,39 +169,41 @@
         if(!phonereg.test(telephone)){
             // 提出提示
             $("#phoneErrorMsg").html("用户手机号码格式错误！");
+            $(".phonenum").css("display","block");
             // 返回，阻止继续向下执行
             return false;
         }else {
             return true;
+            $(".phonenum").css("display","none");
         }
     }
 
     // 发送验证码
     function sendSmsCode() {
         let telephone=$("#telephone").val();
-        $.get("${pageContext.request.contextPath}/userServlet?method=sendSMSCode&telephone="+telephone);
+        $.get("${pageContext.request.contextPath}/user/sendSMSCode?telephone="+telephone);
     }
 
     // 验证码校验
     function checkSmsCode() {
-        // 先清空验证码错误提示
-        $("#codeErrorMsg").html("")
         let smsCode = $("#smsCode").val();
         // 发送请求校验
         let flag=true;
         $.get({
-            url:"${pageContext.request.contextPath}/userServlet?method=checkSmsCode&smsCode="+smsCode,
+            url:"${pageContext.request.contextPath}/user/checkCode?smsCode="+smsCode,
             success:function(resp){
                 // alert(resp)
-                if(resp=="0"){
+                if(resp !="ok"){
                     // 错误
-                    $("#codeErrorMsg").html("验证码过期或错误，请重新输入！")
+                    $("#codeErrorMsg").html("验证码过期或错误，请重新输入！");
+                    $(".validcode").css("display","block");
                     flag= false;
                 }else {
                     flag= true;
+                    // 先清空验证码错误提示
+                    $(".validcode").css("display","none");
                 }
             },
-            async: false
         });
         return flag;
     }

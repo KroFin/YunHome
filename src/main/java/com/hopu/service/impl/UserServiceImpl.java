@@ -6,12 +6,17 @@ import com.hopu.domain.User;
 import com.hopu.mapper.UserMapper;
 import com.hopu.service.UserService;
 import com.hopu.utils.MD5Util;
+import com.hopu.utils.RedisClient;
+import com.hopu.utils.SmsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @Service
 @Transactional
@@ -72,5 +77,27 @@ public class UserServiceImpl implements UserService {
         }
         User user = new User();
         userMapper.userSearch(searchContent,searchKeywords);
+    }
+
+    @Override
+    public User findByUserName(String username) {
+        return userMapper.findByUserName(username);
+    }
+
+    @Override
+    public void sendSMSCode(String telephone) {
+        StringBuffer stringBuffer = new StringBuffer();
+        for (int i = 0; i <6 ; i++) {
+            stringBuffer.append(new Random().nextInt(9) + 1);
+        }
+        String code=stringBuffer.toString();
+
+        // 2、发送短信
+        SmsUtil.sendSms(telephone,code);
+
+        // 3、发送成，就直接讲验证码存入Redis中
+        RedisTemplate redisTemplate = RedisClient.getRedisTemplate();
+        // 设置短信验证码有效期为1分钟（60s）
+        redisTemplate.opsForValue().set("smscode",code,1, TimeUnit.MINUTES);
     }
 }

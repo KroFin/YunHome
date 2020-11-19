@@ -15,4 +15,9 @@ public interface UserService {
     void deleteUser(Integer id);
 
     void userSearch(String searchContent ,String searchKeywords);
+
+    User findByUserName(String username);
+
+    void sendSMSCode(String telephone);
+
 }

@@ -3,16 +3,47 @@ package com.hopu.web.controller.user;
 import com.github.pagehelper.PageInfo;
 import com.hopu.domain.User;
 import com.hopu.service.UserService;
+import com.hopu.utils.RedisClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/admin/user")
 public class AUserController {
+
+    @RequestMapping("/checkCode")
+    @ResponseBody
+    public String checkCode(String smsCode) {
+        RedisTemplate redisTemplate = RedisClient.getRedisTemplate();
+        Object o = redisTemplate.opsForValue().get("smscode");
+        if(o==null){
+            return "验证码过期";  // 表示验证码过期
+        }else {
+            if(smsCode.equals(o)){
+                return "ok";  // 表示验证码没有问题
+            }else {
+                return "验证码错误";  // 表示验证码错误
+            }
+        }
+    }
+
+    @RequestMapping("/sendSMSCode")
+    public void sendSMSCode(String telephone) {
+        try {
+            userService.sendSMSCode(telephone);
+            // 暂时把生成的验证码放在sesion域对象,后期会使用redis
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("验证码发送失败！");
+        }
+    }
+
     @Autowired
     private UserService userService;
 
