@@ -7,6 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 public interface RoomService {
+
     PageInfo<Room> findPage(Integer pageNum, Integer pageSize);
 
     void add(Room room, MultipartFile[] uploadfiles);
@@ -20,4 +21,6 @@ public interface RoomService {
     void updateRoomRentStatus(Integer id, int rentStatus);
 
     List<Room> findAll();
+
+    PageInfo<Room> findPageFront(Integer pageNum, Integer pageSize,Integer rent_status,Integer regionId,String rent);
 }

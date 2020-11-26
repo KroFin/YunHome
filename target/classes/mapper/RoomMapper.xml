@@ -58,4 +58,16 @@
     <select id="findAll" resultMap="roomWithUser">
         select * from t_room
     </select>
+    <select id="findAllFront" resultType="com.hopu.domain.Room">
+        select * from t_room
+        <where>
+            <if test="rentStatus !=null ">
+                rent_status = #{rentStatus}
+            </if>
+            <if test="regionId !=null ">
+                and region_id = #{regionId}
+            </if>
+            and rent between #{beginRent} and #{endRent}
+        </where>
+    </select>
 </mapper>

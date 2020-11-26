@@ -8,8 +8,7 @@ import com.hopu.domain.RoomImg;
 import com.hopu.mapper.RoomImgMapper;
 import com.hopu.mapper.RoomMapper;
 import com.hopu.service.RoomService;
-import com.hopu.utils.FTPUtil;
-import com.hopu.utils.UploadUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,7 +16,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -91,6 +89,25 @@ public class RoomServiceImpl implements RoomService {
     @Override
     public List<Room> findAll() {
         return roomMapper.findAll();
+    }
+
+    @Override
+    public PageInfo<Room> findPageFront(Integer index, Integer size,Integer rentStatus,Integer regionId,String rent) {
+        PageHelper.startPage(index,size);
+        // 对region进行判断
+        if(regionId !=null &&regionId==0){
+            regionId=null;
+        }
+        // 对rent租金进行拆解
+        int beginRent=0;
+        int endRent=9999999;
+        if(StringUtils.isNotEmpty(rent)){
+            String[] rents = rent.split("_");
+            beginRent=Integer.parseInt(rents[0]);
+            endRent=Integer.parseInt(rents[1]);
+        }
+        List<Room> list = roomMapper.findAllFront(rentStatus,regionId,beginRent,endRent);
+        return new PageInfo(list);
     }
 
     public FtpConfig getFtpConfig() {

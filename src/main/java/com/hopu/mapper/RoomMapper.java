@@ -25,4 +25,6 @@ public interface RoomMapper {
 
     @Update("UPDATE t_room SET rent_status =#{rentStatus} WHERE id =#{id}")
     void updateRoom(@Param("id") Integer id, @Param("rentStatus") int rentStatus);
+
+    List<Room> findAllFront(@Param("rentStatus") Integer rentStatus,@Param("regionId") Integer regionId,@Param("beginRent") int beginRent,@Param("endRent") int endRent);
 }

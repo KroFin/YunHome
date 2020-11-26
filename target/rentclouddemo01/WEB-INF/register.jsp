@@ -193,7 +193,7 @@
             url:"${pageContext.request.contextPath}/user/checkCode?smsCode="+smsCode,
             success:function(resp){
                 // alert(resp)
-                if(resp !="ok"){
+                if(resp !=="ok"){
                     // 错误
                     $("#codeErrorMsg").html("验证码过期或错误，请重新输入！");
                     $(".validcode").css("display","block");
