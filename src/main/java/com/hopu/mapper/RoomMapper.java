@@ -20,6 +20,8 @@ public interface RoomMapper {
 
     void update(Room room);
 
+    List<Room> findAllByIds(List<Integer> roomIdList);
+
     @Delete("DELETE FROM t_room WHERE id =#{id}")
     void deleteById(Integer id);
 

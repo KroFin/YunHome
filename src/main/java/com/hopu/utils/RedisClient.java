@@ -14,7 +14,7 @@ public class RedisClient {
         factory.setUsePool(false);  // 不实用池技术
         factory.setClientName("medical_db");  // 连接的Redis数据库名称
         factory.setHostName("123.57.252.81");     // 连接的Redis数据库主机名，默认本机
-        factory.setPassword("iot123456");              // 连接的Redis数据库密码
+        factory.setPassword("iot123456.");              // 连接的Redis数据库密码
         factory.setPort(6379);                // 连接的Redis数据库端口号
         // 完成工厂设置
         factory.afterPropertiesSet();

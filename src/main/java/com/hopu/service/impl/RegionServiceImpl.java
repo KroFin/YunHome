@@ -19,4 +19,9 @@ public class RegionServiceImpl implements RegionService {
     public List<Region> findAll() {
         return regionMapper.findAll();
     }
+
+    @Override
+    public Region findById(Integer regionId) {
+        return regionMapper.findById(regionId);
+    }
 }

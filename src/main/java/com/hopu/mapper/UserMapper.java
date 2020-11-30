@@ -2,10 +2,14 @@ package com.hopu.mapper;
 
 import com.hopu.domain.User;
 import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface UserMapper {
 
     @Select("SELECT * FROM t_user WHERE username = #{username}")
@@ -25,4 +29,13 @@ public interface UserMapper {
     void deleteById(Integer id);
 
     void userSearch(String searchContent ,String searchKeywords);
+
+    @Select("SELECT * FROM t_user WHERE username= #{username} AND password =#{password}")
+    User findUserByNameAndPWD(@Param("username") String username, @Param("password")String password);
+
+    @Update("update t_user set password = #{password} where email = #{email}")
+    void ChangePasswordBackByMail(@Param("email")String email , @Param("password") String password);
+
+    @Select("select * from t_user where email = #{email}")
+    User selectUserByMail(@Param("email")String email);
 }

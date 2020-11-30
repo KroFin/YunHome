@@ -15,9 +15,9 @@ import java.util.Date;
 
 public class SmsUtil {
 
-    private static String accessKeyId = "LTAIqbsqfx397g0p";//需要替换成自己申请的accessKeyId
+    private static String accessKeyId = "LTAI4GFJ8cNY4C67J1eYsven";//需要替换成自己申请的accessKeyId
 
-    private static String accessKeySecret = "k3yLH2xL6R6k6OVqoFnh4CquwHHhIN";//需要替换成自己申请的accessKeySecret
+    private static String accessKeySecret = "J0r1IWp3zfBdKYG4sDkXcmZn8OeacC";//需要替换成自己申请的accessKeySecret
 
     static final String product = "Dysmsapi";//产品名称:云通信短信API产品,开发者无需替换
 
@@ -30,7 +30,7 @@ public class SmsUtil {
      * @param code         验证码
      */
     public static void sendSms(String phoneNumbers, String code) {
-        sendSms(phoneNumbers, "厚浦云租房", "SMS_186395423", "{\"code\":\"" + code + "\"}");
+        sendSms(phoneNumbers, "IOTDreamClub", "SMS_205575326", "{\"code\":\"" + code + "\"}");
     }
 
     /**
@@ -71,6 +71,11 @@ public class SmsUtil {
 
             //hint 此处可能会抛出异常，注意catch
             SendSmsResponse sendSmsResponse = acsClient.getAcsResponse(request);
+
+            if(sendSmsResponse.getCode() != null && sendSmsResponse.getCode().equals("OK")) {
+                System.out.println("请求成功");
+            }
+
         } catch (Exception e) {
             System.out.println("发送短信失败");
             e.printStackTrace();
@@ -117,6 +122,6 @@ public class SmsUtil {
 
 
     public static void main(String[] args) {
-        sendSms("13717594450", "厚浦旅游网", "SMS_186395423", "{\"code\":\"123456\"}");
+        sendSms("17340526910", "IOTDreamClub", "SMS_205575326", "{\"code\":\"123456\"}");
     }
 }

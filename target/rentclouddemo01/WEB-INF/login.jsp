@@ -35,19 +35,21 @@
 
 <div class="login">
 	 <h1>用户登录</h1>
-	<form class="form-horizontal">
-		<div class="form-group">
+	<div class="error_msg" style="margin-left: 90px;color: red;}"><label class="msgColor">${loginError_msg}</label></div>
+	<form class="form-horizontal" action="${pageContext.request.contextPath}/user/login" method="post">
+		<div class="form-group" >
 			<label for="username" class="col-sm-3 control-label">用户名</label>
 			<div class="col-sm-9">
-				<input type="username" class="form-control" id="username" placeholder="Username">
+				<input type="username" class="form-control" id="username" name="username" placeholder="Username">
 			</div>
 		</div>
 		<div class="form-group">
 			<label for="inputPassword3" class="col-sm-3 control-label">密码</label>
 			<div class="col-sm-9">
-				<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+				<input type="password" class="form-control" id="inputPassword3" name="password" placeholder="Password">
 			</div>
 		</div>
+		<a href="${pageContext.request.contextPath}/user/toPasswordChange" style="float: right; color: #0c0c0c">密码忘记？</a>
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
 				<div class="checkbox">

@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void addUser(User user) {
+    public void add(User user) {
         // 用户密码加密处理
         user.setPassword(MD5Util.encodeByMd5(user.getPassword()));
         user.setCreateTime(new Date());
@@ -99,5 +99,24 @@ public class UserServiceImpl implements UserService {
         RedisTemplate redisTemplate = RedisClient.getRedisTemplate();
         // 设置短信验证码有效期为1分钟（60s）
         redisTemplate.opsForValue().set("smscode",code,1, TimeUnit.MINUTES);
+    }
+
+    @Override
+    public User login(User user) {
+        String password = user.getPassword();
+        password = MD5Util.encodeByMd5(password);
+        User user1=userMapper.findUserByNameAndPWD(user.getUsername(),password);
+        return user1;
+    }
+
+    @Override
+    public void ChangePasswordBackByMail(String email, String password) {
+        String newPassword = MD5Util.encodeByMd5(password);
+        userMapper.ChangePasswordBackByMail(email,newPassword);
+    }
+
+    @Override
+    public User selectUserByMail(String email) {
+        return userMapper.selectUserByMail(email);
     }
 }

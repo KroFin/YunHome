@@ -84,6 +84,11 @@ public class RoomImgServiceImpl implements RoomImgService {
         }
     }
 
+    @Override
+    public List<RoomImg> findByRoomId(Integer id) {
+        return roomImgMapper.findByRoomId(id);
+    }
+
     private String byte2Hex(byte[] bytes) {
         StringBuffer stringBuffer = new StringBuffer();
         String temp = "";

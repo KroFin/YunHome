@@ -2,9 +2,11 @@ package com.hopu.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.hopu.domain.Favority;
 import com.hopu.domain.FtpConfig;
 import com.hopu.domain.Room;
 import com.hopu.domain.RoomImg;
+import com.hopu.mapper.FavorityMapper;
 import com.hopu.mapper.RoomImgMapper;
 import com.hopu.mapper.RoomMapper;
 import com.hopu.service.RoomService;
@@ -18,10 +20,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
 public class RoomServiceImpl implements RoomService {
+
+    @Autowired
+    private FavorityMapper favorityMapper;
+
     @Autowired
     private RoomMapper roomMapper;
 
@@ -107,6 +114,26 @@ public class RoomServiceImpl implements RoomService {
             endRent=Integer.parseInt(rents[1]);
         }
         List<Room> list = roomMapper.findAllFront(rentStatus,regionId,beginRent,endRent);
+        return new PageInfo(list);
+    }
+
+    @Override
+    public PageInfo<Room> findFavorityByPage(Integer pageNum, Integer pageSize, Integer userId) {
+        List<Favority> favorityList =favorityMapper.findByUserId(userId);
+        List<Integer> roomIdList = favorityList.stream().map(favority -> favority.getRoomId()).collect(Collectors.toList());
+        // 非空处理判断
+        if(roomIdList==null || roomIdList.size()<=0){
+            return null;
+        }
+        PageHelper.startPage(pageNum,pageSize);
+
+        List<Room> list = roomMapper.findAllByIds(roomIdList);
+        // 查询图片
+        list.forEach(room -> {
+            List<RoomImg> roomImgList = roomImgMapper.findByRoomId(room.getId());
+            room.setRoomImgList(roomImgList);
+        });
+
         return new PageInfo(list);
     }
 

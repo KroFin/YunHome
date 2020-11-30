@@ -7,6 +7,17 @@
             select="com.hopu.mapper.UserMapper.findById"
         />
     </resultMap>
+
+    <select id="findAllByIds" resultType="room">
+        select * from t_room
+        <where>
+            id in
+            <foreach collection="list" open="(" separator="," close=")" item="id">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
     <insert id="save" parameterType="room" keyProperty="id" useGeneratedKeys="true">
         insert INTO t_room
         (title, rent, room_type,user_id,region_id,address,detail_address,area,rent_type,traffic_condition,facilities_condition,room_desc,rent_status)

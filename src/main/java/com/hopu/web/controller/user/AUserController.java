@@ -62,7 +62,7 @@ public class AUserController {
     @RequestMapping("/add")
     public String add(User user){
         user.setRole("管理员");
-        userService.addUser(user);
+        userService.add(user);
         // 把请求数据放在域对象中
         return "redirect:/admin/user/list";
     }

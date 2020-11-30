@@ -407,7 +407,7 @@
                             <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
                         </c:if>
                         <c:if test="${page.pageNum==page.total}">
-                            <li class="disabled"><span aria-label="Next"><span aria-hidden="true">&raquo;</span></span></li>
+                            <li class="disabled"><span aria-label="Next"><spa4n aria-hidden="true">&raquo;</spa4n></span></li>
                         </c:if>
 
                     </ul>

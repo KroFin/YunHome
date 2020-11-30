@@ -30,7 +30,7 @@ public class MD5Util {
 
 	//测试
 	public static void main(String[] args) throws Exception{
-		String password = "1234567";
+		String password = "123456";
 		String passwordMD5 = MD5Util.encodeByMd5(password);
 		System.out.println(password);
 		System.out.println(passwordMD5);
