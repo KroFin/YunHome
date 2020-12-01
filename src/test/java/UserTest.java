@@ -1,13 +1,19 @@
-import com.hopu.domain.User;
+
 import com.hopu.mapper.UserMapper;
 import com.hopu.service.UserService;
 import com.hopu.utils.MailUtil;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
 
 import javax.mail.MessagingException;
-import java.awt.*;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@WebAppConfiguration
+@ContextConfiguration(locations = {"classpath:applicationContext*.xml"})
 public class UserTest {
 
     @Autowired
@@ -29,5 +35,10 @@ public class UserTest {
         } catch (MessagingException e) {
             e.printStackTrace();
         }
+    }
+
+    @Test
+    public void insertHistory(){
+        userMapper.insertHistory(1,1);
     }
 }

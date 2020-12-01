@@ -1,5 +1,6 @@
 package com.hopu.mapper;
 
+import com.hopu.domain.History;
 import com.hopu.domain.Room;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Param;
@@ -29,4 +30,7 @@ public interface RoomMapper {
     void updateRoom(@Param("id") Integer id, @Param("rentStatus") int rentStatus);
 
     List<Room> findAllFront(@Param("rentStatus") Integer rentStatus,@Param("regionId") Integer regionId,@Param("beginRent") int beginRent,@Param("endRent") int endRent);
+
+    @Select("select * from t_history h join t_room r on h.room_id = r.id  where h.h_user_id = #{userId}")
+    List<Room> findRoomByHistoryUser(@Param("userId")Integer userId);
 }

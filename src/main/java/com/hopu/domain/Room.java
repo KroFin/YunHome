@@ -25,6 +25,15 @@ public class Room implements Serializable {
     private Region region;
     private List<RoomImg> roomImgList;
 
+    private History history;
+
+    public History getHistory() {
+        return history;
+    }
+
+    public void setHistory(History history) {
+        this.history = history;
+    }
 
     public User getRentUser() {
         return rentUser;

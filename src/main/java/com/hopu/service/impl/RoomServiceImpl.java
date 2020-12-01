@@ -1,5 +1,6 @@
 package com.hopu.service.impl;
 
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.hopu.domain.Favority;
@@ -9,7 +10,9 @@ import com.hopu.domain.RoomImg;
 import com.hopu.mapper.FavorityMapper;
 import com.hopu.mapper.RoomImgMapper;
 import com.hopu.mapper.RoomMapper;
+import com.hopu.mapper.UserMapper;
 import com.hopu.service.RoomService;
+import com.hopu.service.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -136,6 +139,12 @@ public class RoomServiceImpl implements RoomService {
 
         return new PageInfo(list);
     }
+
+    @Override
+    public List<Room> findRoomByHistoryUser(Integer userId) {
+        return roomMapper.findRoomByHistoryUser(userId);
+    }
+
 
     public FtpConfig getFtpConfig() {
         return ftpConfig;

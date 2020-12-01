@@ -1,6 +1,7 @@
 package com.hopu.web.controller.front;
 
 import com.hopu.domain.User;
+import com.hopu.service.FunctionService;
 import com.hopu.service.UserService;
 import com.hopu.utils.MailUtil;
 import com.hopu.utils.RedisClient;
@@ -12,8 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.mail.MessagingException;
-import javax.mail.Session;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -23,6 +22,10 @@ import java.io.PrintWriter;
 @Controller
 @RequestMapping("/user")
 public class LoginController {
+
+    @Autowired
+    private FunctionService functionService;
+
     @Autowired
     private UserService userService;
 
@@ -34,6 +37,13 @@ public class LoginController {
     @RequestMapping("/toChangUPassword")
     public String changUPassword(HttpServletRequest request , HttpSession session){
         String mail = String.valueOf(request.getParameter("email"));
+        String verifyCode = String.valueOf(request.getParameter("verifyCode"));
+
+        RedisTemplate redisTemplate = RedisClient.getRedisTemplate();
+        Object o = redisTemplate.opsForValue().get("verifyCode");
+        if (!verifyCode.equals(o)){
+            return "index";
+        }
         session.setAttribute("email",mail);
 //        userService.ChangePasswordBackByMail(mail,password);
         return "changUPassword";
@@ -63,6 +73,8 @@ public class LoginController {
 
         User user = userService.selectUserByMail(email);
 
+        String verifyCode = functionService.createAVerifyNumber();
+
         if (user == null){
             response.setContentType("text/html; charset=UTF-8"); //转码
             PrintWriter out;
@@ -82,9 +94,11 @@ public class LoginController {
         MailUtil mailUtil = new MailUtil();
 
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("请点击下方链接重置您的密码");
+        stringBuilder.append("请点击下方链接重置您的密码\n");
         stringBuilder.append("\n");
-        stringBuilder.append("http://localhost:8080/user/toChangUPassword?email="+email);
+        stringBuilder.append("http://localhost:8080/user/toChangUPassword?email="+email+"&verifyCode="+verifyCode+"\n");
+        stringBuilder.append("\n");
+        stringBuilder.append("【该邮件10分钟内有效】");
 
         if (email != null){
             try {

@@ -1,0 +1,11 @@
+.commonTopbar #commonTopbar_mymenu.hover{
+    border-color: #eee;
+}
+.commonTopbar .hover .hc {
+    border: 1px solid #eee;
+    display: block;
+    position: absolute;
+    zoom: 1;
+    background: #fff;
+    padding: 0;
+}

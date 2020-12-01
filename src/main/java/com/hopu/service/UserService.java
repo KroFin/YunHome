@@ -1,10 +1,13 @@
 package com.hopu.service;
 
 import com.github.pagehelper.PageInfo;
+import com.hopu.domain.Room;
 import com.hopu.domain.User;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
+
+import java.util.List;
 
 public interface UserService {
     PageInfo<User> selectAll(Integer pageNum, Integer pageSize);
@@ -28,5 +31,9 @@ public interface UserService {
     void ChangePasswordBackByMail(@Param("email")String email , @Param("password") String password);
 
     User selectUserByMail(@Param("email")String email);
+
+    void insertHistory(Integer userId,Integer roomId);
+
+
 
 }

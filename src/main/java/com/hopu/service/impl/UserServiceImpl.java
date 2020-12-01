@@ -119,4 +119,9 @@ public class UserServiceImpl implements UserService {
     public User selectUserByMail(String email) {
         return userMapper.selectUserByMail(email);
     }
+
+    @Override
+    public void insertHistory(Integer userId, Integer roomId) {
+        userMapper.insertHistory(userId, roomId);
+    }
 }

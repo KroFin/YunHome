@@ -25,4 +25,6 @@ public interface RoomService {
     PageInfo<Room> findPageFront(Integer pageNum, Integer pageSize,Integer rent_status,Integer regionId,String rent);
 
     PageInfo<Room> findFavorityByPage(Integer pageNum, Integer pageSize,Integer userId);
+
+    List<Room> findRoomByHistoryUser(Integer userId);
 }

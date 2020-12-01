@@ -39,13 +39,13 @@
         <div class="form-group" >
             <label for="password" class="col-sm-3 control-label">新密码</label>
             <div class="col-sm-9">
-                <input type="password" class="form-control" id="password" name="password" placeholder="E-Mail">
+                <input type="password" class="form-control" id="password" name="password" placeholder="新密码">
             </div>
         </div>
         <div class="form-group" >
             <label for="passwordRE" class="col-sm-3 control-label">重新输入新密码</label>
             <div class="col-sm-9">
-                <input type="password" class="form-control" id="passwordRE" name="passwordRE" placeholder="E-Mail" onblur="validate()">
+                <input type="password" class="form-control" id="passwordRE" name="passwordRE" placeholder="重复输入新密码" onblur="validate()">
             </div>
         </div>
         <span id="msg"></span>

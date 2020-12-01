@@ -21,6 +21,35 @@ public class User implements Serializable {
     private List<Room> roomList;
     private List<Favority> favorities;
 
+    private Integer roomId;
+    private Integer userId;
+
+    private History history;
+
+    public History getHistory() {
+        return history;
+    }
+
+    public void setHistory(History history) {
+        this.history = history;
+    }
+
+    public Integer getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(Integer roomId) {
+        this.roomId = roomId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
     public List<Room> getRoomList() {
         return roomList;
     }
