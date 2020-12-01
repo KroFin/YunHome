@@ -33,4 +33,10 @@ public interface RoomMapper {
 
     @Select("select * from t_history h join t_room r on h.room_id = r.id  where h.h_user_id = #{userId}")
     List<Room> findRoomByHistoryUser(@Param("userId")Integer userId);
+
+    @Select("select * from t_history where h_user_id = #{userId}")
+    List<History> findHistoryByUserId(Integer userId);
+
+    @Delete("delete from t_history where hh_id = #{hhId}")
+    void deleteHistory(Long hhId);
 }

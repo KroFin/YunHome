@@ -906,6 +906,15 @@ em, i {
     padding-right: 20PX;
     height: 16PX;
 }
+
+.house-list li .list-li-right .deleteHistory {
+    text-align: right;
+    padding-top: 30PX;
+    font-size: 12PX;
+    padding-right: 20PX;
+    height: 16PX;
+}
+
 .house-list li .list-li-right .money {
     margin-top: 25PX;
     margin-right: 30PX;

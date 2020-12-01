@@ -3,10 +3,7 @@ package com.hopu.service.impl;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.hopu.domain.Favority;
-import com.hopu.domain.FtpConfig;
-import com.hopu.domain.Room;
-import com.hopu.domain.RoomImg;
+import com.hopu.domain.*;
 import com.hopu.mapper.FavorityMapper;
 import com.hopu.mapper.RoomImgMapper;
 import com.hopu.mapper.RoomMapper;
@@ -143,6 +140,16 @@ public class RoomServiceImpl implements RoomService {
     @Override
     public List<Room> findRoomByHistoryUser(Integer userId) {
         return roomMapper.findRoomByHistoryUser(userId);
+    }
+
+    @Override
+    public List<History> findHistoryByUserId(Integer userId) {
+        return roomMapper.findHistoryByUserId(userId);
+    }
+
+    @Override
+    public void deleteHistory(Long hhId) {
+        roomMapper.deleteHistory(hhId);
     }
 
 

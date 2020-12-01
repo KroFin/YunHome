@@ -2,10 +2,7 @@ package com.hopu.web.controller.front;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.hopu.domain.Region;
-import com.hopu.domain.Room;
-import com.hopu.domain.RoomImg;
-import com.hopu.domain.User;
+import com.hopu.domain.*;
 import com.hopu.service.*;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.mail.Session;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -33,6 +32,12 @@ public class RoomController {
     @Autowired
     private FavorityService favorityService;
 
+    @RequestMapping(value = "/deleteHistory")
+    public String deleteHistory(@RequestParam("hhId")Long hhId){
+        roomService.deleteHistory(hhId);
+        return "front/room_history";
+    }
+
     /**
      * 前台分页显示房屋信息
      */
@@ -44,9 +49,17 @@ public class RoomController {
                                   HttpServletRequest request){
         User user =(User) session.getAttribute("loginUser");
         List<Room> roomHistoryList = roomService.findRoomByHistoryUser(user.getId());
-        request.setAttribute("roomHistory",roomHistoryList);
+
+//        List<Date> historyTime = new ArrayList<>();
+//
+
+        List<History> historyList = roomService.findHistoryByUserId(user.getId());
 
         PageHelper.startPage(pageNum,pageSize);
+
+        for (Room room : roomHistoryList){
+            room.setHistoryList(historyList);
+        }
 
         try {
             PageInfo<Room> pageInfo = new PageInfo<>(roomHistoryList,pageSize);

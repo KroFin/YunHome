@@ -1,6 +1,7 @@
 package com.hopu.service;
 
 import com.github.pagehelper.PageInfo;
+import com.hopu.domain.History;
 import com.hopu.domain.Room;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -27,4 +28,9 @@ public interface RoomService {
     PageInfo<Room> findFavorityByPage(Integer pageNum, Integer pageSize,Integer userId);
 
     List<Room> findRoomByHistoryUser(Integer userId);
+
+    List<History> findHistoryByUserId(Integer userId);
+
+    void deleteHistory(Long hhId);
+
 }

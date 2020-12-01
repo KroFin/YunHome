@@ -980,7 +980,7 @@
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="246" parent="235" name="h_id">
+    <column id="246" parent="235" name="hh_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -993,7 +993,7 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="235" name="h_date">
+    <column id="248" parent="235" name="hh_date">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
@@ -1007,7 +1007,7 @@
     </column>
     <key id="250" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>h_id</ColNames>
+      <ColNames>hh_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="251" parent="236" name="id">

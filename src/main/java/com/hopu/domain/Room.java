@@ -1,6 +1,7 @@
 package com.hopu.domain;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.util.List;
 
 public class Room implements Serializable {
@@ -25,14 +26,51 @@ public class Room implements Serializable {
     private Region region;
     private List<RoomImg> roomImgList;
 
-    private History history;
+    private List<History> historyList;
 
-    public History getHistory() {
-        return history;
+    private long hhId;
+    private Integer roomId;
+    private java.sql.Date hhDate;
+    private Integer hUserId;
+
+    public List<History> getHistoryList() {
+        return historyList;
     }
 
-    public void setHistory(History history) {
-        this.history = history;
+    public void setHistoryList(List<History> historyList) {
+        this.historyList = historyList;
+    }
+
+    public long getHhId() {
+        return hhId;
+    }
+
+    public void setHhId(long hhId) {
+        this.hhId = hhId;
+    }
+
+    public Integer getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(Integer roomId) {
+        this.roomId = roomId;
+    }
+
+    public Date gethDate() {
+        return hhDate;
+    }
+
+    public void sethDate(Date hDate) {
+        this.hhDate = hDate;
+    }
+
+    public Integer gethUserId() {
+        return hUserId;
+    }
+
+    public void sethUserId(Integer hUserId) {
+        this.hUserId = hUserId;
     }
 
     public User getRentUser() {

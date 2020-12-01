@@ -1,22 +1,23 @@
 package com.hopu.domain;
 
 
+import java.sql.Date;
+
 public class History {
 
-  private long hId;
+  private long hhId;
   private Integer roomId;
-  private java.sql.Date hDate;
+  private java.sql.Date hhDate;
   private Integer hUserId;
 
 
-  public long getHId() {
-    return hId;
+  public long getHhId() {
+    return hhId;
   }
 
-  public void setHId(long hId) {
-    this.hId = hId;
+  public void setHhId(long hhId) {
+    this.hhId = hhId;
   }
-
 
   public Integer getRoomId() {
     return roomId;
@@ -27,14 +28,13 @@ public class History {
   }
 
 
-  public java.sql.Date getHDate() {
-    return hDate;
+  public Date getHhDate() {
+    return hhDate;
   }
 
-  public void setHDate(java.sql.Date hDate) {
-    this.hDate = hDate;
+  public void setHhDate(Date hhDate) {
+    this.hhDate = hhDate;
   }
-
 
   public Integer getHUserId() {
     return hUserId;
