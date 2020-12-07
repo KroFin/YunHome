@@ -152,6 +152,16 @@ public class RoomServiceImpl implements RoomService {
         roomMapper.deleteHistory(hhId);
     }
 
+    @Override
+    public History findHistoryByUserIdAndHhId(Integer roomId, Integer userId) {
+        return roomMapper.findHistoryByUserIdAndRoomId(roomId, userId);
+    }
+
+    @Override
+    public void updateHistoryByHhid(Long hhId) {
+        roomMapper.updateHistoryByHhid(hhId);
+    }
+
 
     public FtpConfig getFtpConfig() {
         return ftpConfig;

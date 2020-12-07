@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class FunctionServiceImpl implements FunctionService {
     @Override
-    public String createAVerifyNumber() {
+    public String createAVerifyNumber(String value) {
         StringBuffer stringBuffer = new StringBuffer();
         for (int i = 0; i <6 ; i++) {
             stringBuffer.append(new Random().nextInt(9) + 1);
@@ -24,7 +24,7 @@ public class FunctionServiceImpl implements FunctionService {
 
         RedisTemplate redisTemplate = RedisClient.getRedisTemplate();
 
-        redisTemplate.opsForValue().set("verifyCode",newCode,10, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set( value + "verifyCode",newCode,10, TimeUnit.MINUTES);
 
         return newCode;
     }

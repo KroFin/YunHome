@@ -3,6 +3,7 @@ package com.hopu.service;
 import com.github.pagehelper.PageInfo;
 import com.hopu.domain.History;
 import com.hopu.domain.Room;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -32,5 +33,9 @@ public interface RoomService {
     List<History> findHistoryByUserId(Integer userId);
 
     void deleteHistory(Long hhId);
+
+    History findHistoryByUserIdAndHhId(Integer roomId ,Integer userId);
+
+    void updateHistoryByHhid(Long hhId);
 
 }

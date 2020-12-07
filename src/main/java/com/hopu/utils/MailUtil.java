@@ -1,7 +1,6 @@
 package com.hopu.utils;
 
 import com.sun.mail.util.MailSSLSocketFactory;
-import org.springframework.mail.SimpleMailMessage;
 
 import javax.mail.*;
 import javax.mail.internet.AddressException;
@@ -11,6 +10,7 @@ import java.security.GeneralSecurityException;
 import java.util.Properties;
 
 public class MailUtil {
+
     static Properties properties;
     static Message msg;
     static Transport transport;
@@ -49,9 +49,6 @@ public class MailUtil {
     }
 
     public void sendMail(String address, String text) throws AddressException, MessagingException {
-
-
-
         msg.setText(text);
         transport.sendMessage(msg, new Address[]{new InternetAddress(address)});
         transport.close();

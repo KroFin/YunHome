@@ -74,7 +74,6 @@
         else {
             $("#msg").html("两次密码不相同");
             $("#msg").css("color","red")
-            $("button").attr("disabled","disabled");
         }
     }
 </script>

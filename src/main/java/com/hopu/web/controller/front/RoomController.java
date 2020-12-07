@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.mail.Session;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.sql.Date;
-import java.util.ArrayList;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -33,9 +33,9 @@ public class RoomController {
     private FavorityService favorityService;
 
     @RequestMapping(value = "/deleteHistory")
-    public String deleteHistory(@RequestParam("hhId")Long hhId){
+    public String deleteHistory(@RequestParam("hhId")Long hhId , HttpServletResponse response){
         roomService.deleteHistory(hhId);
-        return "front/room_history";
+        return "redirect:historyList";
     }
 
     /**
@@ -122,7 +122,12 @@ public class RoomController {
         Object loginUser = session.getAttribute("loginUser");
 
         if (loginUser instanceof User){
-            userService.insertHistory(((User) loginUser).getId(),room.getId());
+            History history = roomService.findHistoryByUserIdAndHhId(room.getId(),((User) loginUser).getId());
+            if(history == null){
+                userService.insertHistory(((User) loginUser).getId(),room.getId());
+            }else {
+                roomService.updateHistoryByHhid(history.getHhId());
+            }
         }
 
         Region region = regionService.findById(room.getRegionId());

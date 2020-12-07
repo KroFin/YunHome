@@ -34,8 +34,14 @@ public interface RoomMapper {
     @Select("select * from t_history h join t_room r on h.room_id = r.id  where h.h_user_id = #{userId}")
     List<Room> findRoomByHistoryUser(@Param("userId")Integer userId);
 
-    @Select("select * from t_history where h_user_id = #{userId}")
+    @Select("select * from t_history where h_user_id = #{userId} order by hh_date desc, hh_id desc")
     List<History> findHistoryByUserId(Integer userId);
+
+    @Select("select * from t_history where room_id = #{roomId} and h_user_id = #{userId}")
+    History findHistoryByUserIdAndRoomId(@Param("roomId")Integer roomId ,@Param("userId")Integer userId);
+
+    @Update("update t_history set hh_date = NOW() where hh_id = #{hhId}")
+    void updateHistoryByHhid(Long hhId);
 
     @Delete("delete from t_history where hh_id = #{hhId}")
     void deleteHistory(Long hhId);

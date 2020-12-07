@@ -35,7 +35,7 @@
 
 <div class="login">
     <h1>修改密码邮件发送</h1>
-    <form class="form-horizontal" action="${pageContext.request.contextPath}/user/findPasswordBack" method="post">
+    <form class="form-horizontal" action="${pageContext.request.contextPath}/user/findPasswordBack" method="post" id="form">
         <div class="form-group" >
             <label for="email" class="col-sm-3 control-label">验证邮箱</label>
             <div class="col-sm-9">
@@ -44,7 +44,7 @@
         </div>
         <div class="form-group">
             <div class="col-sm-12" style="text-align: center">
-                <button type="submit" class="btn btn-success">提交</button>
+                <button type="submit" class="btn btn-success" id="submitMail" onclick="countDown()">提交</button>
             </div>
         </div>
     </form>
@@ -54,7 +54,18 @@
 
 
 <script>
-
+    function countDown() {
+        i = i - 1;
+        document.getElementById('submitMail').value = "("+ i +")";
+        if (i === 0) {
+            flag = 1;
+            i = 60;
+            $("#submitVerifyNum").attr("disabled",false);
+            document.getElementById('submitMail').value = "提交";
+            return;
+        }
+        setTimeout(countDown,1000);
+    }
 </script>
 </body>
 </html>

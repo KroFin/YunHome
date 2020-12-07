@@ -40,7 +40,7 @@ public class LoginController {
         String verifyCode = String.valueOf(request.getParameter("verifyCode"));
 
         RedisTemplate redisTemplate = RedisClient.getRedisTemplate();
-        Object o = redisTemplate.opsForValue().get("verifyCode");
+        Object o = redisTemplate.opsForValue().get( mail + "verifyCode");
         if (!verifyCode.equals(o)){
             return "index";
         }
@@ -55,12 +55,14 @@ public class LoginController {
         userService.ChangePasswordBackByMail(email,password);
         try {
             response.setContentType("text/html; charset=UTF-8");
+            response.sendRedirect("toLoginPage");
             PrintWriter out = response.getWriter();
             out.flush();
             out.println("<script>");
             out.println("alert('修改密码成功，可以正常登陆');");
             out.println("history.back();");
             out.println("</script>");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -73,13 +75,13 @@ public class LoginController {
 
         User user = userService.selectUserByMail(email);
 
-        String verifyCode = functionService.createAVerifyNumber();
+        String verifyCode = functionService.createAVerifyNumber(email);
 
         if (user == null){
-            response.setContentType("text/html; charset=UTF-8"); //转码
-            PrintWriter out;
+
             try {
-                out = response.getWriter();
+                response.setContentType("text/html; charset=UTF-8"); //转码
+                PrintWriter out = response.getWriter();
                 out.flush();
                 out.println("<script>");
                 out.println("alert('验证邮箱不存在，请注册');");
@@ -104,18 +106,18 @@ public class LoginController {
             try {
                 mailUtil.sendMail(email,stringBuilder.toString());
                 response.setContentType("text/html; charset=UTF-8"); //转码
+                response.sendRedirect("toLoginPage");
                 PrintWriter out = response.getWriter();
                 out.flush();
                 out.println("<script>");
                 out.println("alert('邮件发送成功，请查阅您的邮箱');");
                 out.println("history.back();");
                 out.println("</script>");
-                return "login";
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        return "redirect:/login";
+        return "login";
     }
 
     // 跳转到用户注册页面

@@ -121,6 +121,14 @@
         // 2、再对用户名进行重名校验
         // 定义标记，对查询结果进行标记；同时声明同步请求，避免异步进入下一个方法
         let flag=true;
+
+        $.ajax({
+            url:"user/toLoginPage",
+            success:function () {
+
+            }
+        });
+
         $.get({
             url: "${pageContext.request.contextPath}/userServlet?method=findUserName&username="+username,
             success:function(resp){
